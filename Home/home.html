@@ -3,22 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Top | JEARN</title>
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="home.css">
+    <title>About JEARN | JEARN</title>
 </head>
+
 <body>
+    <!--ヘッダー-->
     <header>
+        <div class="main-menu">
+            <div class="logo">
+                <a href="L">
+                    <img src="https://www.jearn.jp/2023/img/jearn-info-1.png" alt="JEARN">
+                </a>
+            </div>
 
+            <!--ハンバーガーメニュー-->
+            <div class="hb-menu">
+                <!--三本線の表示-->
+                <input type="checkbox" id="hb-menu_check">
+                <label for="hb-menu_check" class="hb-menu_box">
+                    <span></span>
+                </label>
+
+                <!--メニューの内容-->
+                <div class="hb-menu_content">
+                    <ul class="hb-menu_list">
+
+                        <li class="hb-menu_item">
+                            <a class="hb-menu_summary" href="#">Home</a>
+                        </li>
+
+                        <li class="hb-menu_item">
+                            <details>
+                                <summary class="hb-menu_summary">About us</summary>
+                                    <ul class="hb-menu_details">
+                                        <li class="hb-menu_link"><a href="">About JEARN</a></li>
+                                        <li class="hb-menu_link"><a href="">理事長挨拶</a></li>
+                                        <li class="hb-menu_link"><a href="">iEARN</a></li>
+                                    </ul>
+                            </details>
+                        </li>
+
+                        <li class="hb-menu_item">
+                            <details>
+                                <summary class="hb-menu_summary">国際協働学習</summary>
+                                    <ul class="hb-menu_details">
+                                        <li class="hb-menu_link"><a href="">国際協働学習とは</a></li>
+                                        <li class="hb-menu_link"><a href="">プロジェクト</a></li>
+                                    </ul>
+                            </details>
+                        </li>
+
+                        <li class="hb-menu_item">
+                            <details>
+                                <summary class="hb-menu_summary">Publication</summary>
+                                    <ul class="hb-menu_details">
+                                        <li class="hb-menu_link"><a href="">オンラインジャーナル</a></li>
+                                        <li class="hb-menu_link"><a href="">論文等</a></li>
+                                    </ul>
+                            </details>
+                        </li>
+
+                        <li class="hb-menu_item">
+                            <details>
+                                <summary class="hb-menu_summary">Events</summary>
+                                    <ul class="hb-menu_details">
+                                        <li class="hb-menu_link"><a href="">開催予定のイベント</a></li>
+                                    </ul>
+                            </details>
+                        </li>
+
+                        <li class="hb-menu_item">
+                            <details>
+                                <summary class="hb-menu_summary">Archives</summary>
+                                    <ul class="hb-menu_details">
+                                        <li class="hb-menu_link"><a href="">シンポジウム</a></li>
+                                        <li class="hb-menu_link"><a href="">講演会</a></li>
+                                        <li class="hb-menu_link"><a href="">学習会</a></li>
+                                        <li class="hb-menu_link"><a href="">記事・講義録</a></li>
+                                        <li class="hb-menu_link"><a href="">プロジェクト</a></li>
+                                    </ul>
+                            </details>
+                        </li>
+
+                        <li class="hb-menu_item">
+                            <details>
+                                <summary class="hb-menu_summary">Join us! FAQ</summary>
+                                    <ul class="hb-menu_details">
+                                        <li class="hb-menu_link"><a href="">加入方法</a></li>
+                                        <li class="hb-menu_link"><a href="">加入フォーム</a></li>
+                                        <li class="hb-menu_link"><a href="">FAQ</a></li>
+                                        <li class="hb-menu_link"><a href="">お問い合わせ</a></li>
+                                    </ul>
+                            </details>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </header>
-    <body>
-        <div class="top-about-jearn">
-            
+
+
+    <!--メインコンテンツ-->
+    <!--見出し-->
+    <main>
+        <div class="content-bg-white">
+            <div class="top-visual">
+                <div class="top-img-bg">
+                    <img class="top-img" src="https://www.unic.or.jp/files/sdg_poster_ja_2021.jpg" alt="SDGs">
+                </div>
+                    <h1 class="top-title">“Learn with the world,<br>not just about it”</h1>
+            </div>
         </div>
-        <div class="top-our-key-words">
+        
+        <!--テキスト-->
+        <div class="content-bg-white">
+                <h1 class="content-title">About JEARN</h1>
+
+                <h3>NPO法人ジェイアーン（正式名:特定非営利活動法人 グローバルプロジェクト推進機構 JEARN）は、
+                    世界140の国・地域の学生、教育者が参加する国際NGOアイアーンの日本センターです。
+                    国際交流、外国語教育、デジタル・シティズンシップ教育などに関心のあるみなさまに役立つ情報を目指しています。</h3>
+                <p>→more</p>
+        </div>
+
+        <div class="content-bg-white">
+                <h1 class="content-title">Our Key words</h1>
+
+                <div class="card-container">
+                    <div class="card">
+                        <h3>国際協働学習</h3>
+                        <p>グローバルネットワークを日本の教育現場に！</p>
+                        <p>→more</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>プロジェクト</h3>
+                        <p>世界中の人々と一緒に社会問題を解決！</p>
+                        <p>→more</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>イベント</h3>
+                        <p>国際交流に興味のある学生や教育者と交流！</p>
+                        <p>→more</p>
+                    </div>
+                </div>
+                
+        </div>
+
+        <div class="content-bg-white">
+                <h1 class="content-title">X（旧Twitter）</h1>
 
         </div>
-    </body>
-    <footer>
 
-    </footer>
+        <div class="content-bg-white">
+                <h1 class="content-title">Partners</h1>
+
+                <div class="card-container">
+                    <div class="card">
+                        <p>株式会社内田洋行</p>
+                    </div>
+                    <div class="card">
+                        <p>東京書籍株式会社</p>
+                    </div>
+                    <div class="card">
+                        <p>青山学院大学</p>
+                    </div>
+                    <div class="card">
+                        <p>実践女子大学短期大学部</p>
+                    </div>
+                </div>
+        </div>
+
+        <div class="content-bg-white">
+                <h1 class="content-title">Technical Partner</h1>
+
+        </div>
+
+        <p>ページTopへ</p>
+    </main>
 </body>
 </html>

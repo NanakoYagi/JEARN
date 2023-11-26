@@ -1,3 +1,185 @@
 /*  ここには全ページに共通する事項を記入する
 /*  ヘッダー、フッダー、文字色、背景、フォント関連
 /* --------------------------------------------- */
+/* 文字の設定 */
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap');
+
+body {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+h1 {
+    font-size: 48px;
+    text-align: center;
+}
+.page-title {
+    padding: 24px 0 24px 0;
+    border-top: 1px solid #34B3E6;
+    border-bottom: 1px solid #34B3E6;
+}
+h2 {
+    font-size: 40px;
+    margin-left: 20px;
+    display: inline-block;
+    border-bottom: 1px solid #34B3E6;
+}
+h3 {
+    font-size: 32px;
+    text-align: center;
+}
+p {
+    font-size: 24px;
+    text-align: center;
+}
+
+/* --------------------------------------------- */
+/* 背景色の設定 */
+.content-bg-white {
+    background-color: #FFFFFF;
+    border-bottom: 1px #000000;
+}
+.content-bg-gray {
+    background-color: #E0DCDC;
+}
+
+/* --------------------------------------------- */
+/* 見出しの設定 */
+.keyvisual {
+    width: 100%;
+    height: 350px;
+    background: #3B4FAC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 62.5%;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+}
+.nav1 {
+    position: absolute;
+    top: 120px;
+    left: -70px;
+    padding-left: 5%;
+}
+.nav2 li {
+    display: inline;
+    font-size: 11px;
+    line-height: 1.75;
+}
+.nav2 li ::after {
+    content: ' > ';
+    color: #FFFFFF;
+    top : 0;
+    left : 0;
+    padding: 0.2em;
+}
+.nav2 a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+/* --------------------------------------------- */
+/* ハンバーガーメニュー */
+.hb-menu_box {
+    /*位置の設定*/
+    position: fixed;
+    top: 0;
+    right: 0;
+    /* 中の要素を上下中央寄せ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* サイズ指定 */
+    height: 113px;
+    width: 113px;
+    /* 最前面にする */
+    z-index: 100;
+    background-color: #ffffff;
+}
+/* メニューの白線を疑似要素を使って3本作成 */
+.hb-menu_box span,         /* 真ん中の線 */
+.hb-menu_box span:before,  /* 上の線 */
+.hb-menu_box span:after {  /* 下の線 */
+    content: "";
+    /* ３本線のサイズと色を指定 */
+    display: block;
+    height: 5px;
+    width: 57px;
+    border-radius: 3px;
+    background-color: #000000;
+    position: absolute;
+}
+/* 上の線の位置 */
+.hb-menu_box span:before {
+    bottom: 20px;
+}
+/* 下の線の位置 */
+.hb-menu_box span:after {
+    top: 20px;
+}
+/* チェックボックスを使ってメニューの出し入れ */
+#hb-menu_check {
+    display: none;
+}
+/* チェックボックスがONになったら✕を表示させる */
+/* 真ん中の線は透明にする */
+#hb-menu_check:checked ~ .hb-menu_box span {
+    background: rgba(255, 255, 255, 0);
+}
+/* 上の線と下の線の表示位置を変えることで✕を作る */
+#hb-menu_check:checked ~ .hb-menu_box span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+#hb-menu_check:checked ~ .hb-menu_box span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+/* ハンバーガーメニュー展開後の表示設定 */
+.hb-menu_content {
+    position: fixed;
+    width: 100%;
+    height: 90%;
+    /* 開始位置の設定*/
+    top: 0;
+    left: 100%;
+    /* ページコンテンツの前面、ハンバーガーメニューボタンの背面に表示 */
+    z-index: 90;
+    background-color: #3B4FAC;
+    transition: all 0.5s;
+}
+/* ハンバーガーメニューのコンテンツの設定 */
+.hb-menu_list {
+    padding: 70px 10px 0;
+}
+/* メニュー項目 */
+.hb-menu_item {
+    border-bottom: solid 1px #ffffff;
+    list-style: none;
+}
+/* メニュー項目の折りたたみメニュー */
+.hb-menu_summary {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    box-sizing: border-box;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 9px 15px 10px 0;
+}
+/* 折りたたみメニュー展開後の設定 */
+.hb-menu_details {
+    display: flex;
+    color: #FFFFFF;
+}
+.hb-menu_link {
+    list-style: none;
+    margin-left: 20px;
+}
+.hb-menu_link a {
+    color: #FFFFFF;
+}
+
+/* ハンバーガーメニューのチェックボックスがONの時だけ左端に展開する */
+#hb-menu_check:checked ~ .hb-menu_content {
+  left: 0;
+}
