@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Zen Kaku Gothic New', sans-serif;
+    margin: 0 auto;
 }
 h1 {
     font-size: 48px;
@@ -48,23 +49,33 @@ p {
 }
 
 /* --------------------------------------------- */
-/* 見出しの設定 */
+/* ヘッダーの設定 */
 .keyvisual {
     width: 100%;
-    height: 350px;
+    height: 250px;
     background: #3B4FAC;
     /* display: flex; */
     justify-content: center;
     align-items: center;
     color: white;
     font-size: 62.5%;
+    font-weight: 400;
     font-family: "Zen Kaku Gothic New", sans-serif;
+    border-top: #000000 1px solid;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 1000px 200px;
+    border-bottom-left-radius: 1000px 200px;
 }
-/* .nav1 {
-    position: absolute;
-    top: 120px;
-    left: -70px;
-    padding-left: 5%;
+
+/* --------------------------------------------- */
+/* パンくずリストの設定*/
+.nav1 {
+    padding: 0.5%;
+}
+.nav2 {
+    font-size: 16px;
+    padding-left: 1%;
 }
 .nav2 li {
     display: inline;
@@ -77,12 +88,86 @@ p {
     top : 0;
     left : 0;
     padding: 0.2em;
+} 
+.nav2 .last ::after {
+    content: none;
 }
 .nav2 a {
     color: currentColor;
     text-decoration: none;
-} */
+}  
 
+/* --------------------------------------------- */
+/* フッターの設定 */
+.footerwrap {
+    /* フッター全体のcss */
+    width: 100%;
+    background-color: #3B4FAC;
+    color: #FFFFFF;
+}
+.end{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    min-width: 65%;
+}
+.footernav li {
+    display: inline;
+    font-size: 11px;
+    line-height: 1.75;
+}
+.footernav2 li {
+    display: inline;
+    font-size: 11px;
+    line-height: 1.75;
+}
+.NPO {
+    text-align: left;
+    font-size: 16px;
+}
+.mail {
+    text-align: left;
+    font-size: 16px;
+}
+.footernav {
+    padding: 0%;
+}
+.address {
+    position: relative;
+    padding: 10px;
+    width: 30%;
+}
+.address a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.SDGs {
+    position: relative;
+    padding: 10px;
+    width: 30%;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+.SDGs a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.footermenu {
+    position: relative;
+    padding: 10px;
+    width: 30%;
+}
+.footernav2 a{
+    color: #FFFFFF;
+     text-decoration: none;
+}
+.pry a {
+    color: #FFFFFF;
+}
+.copy {
+    border-top: #FFFFFF 1px solid;
+    text-align: center;
+}
 /* --------------------------------------------- */
 /* ハンバーガーメニュー */
 .hb-menu_box {
