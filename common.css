@@ -11,7 +11,7 @@ h1 {
     font-size: 48px;
     text-align: center;
 }
-.page-title {
+.page-title { /* 上と下に青い線がひかれた「JEARN」とか「理事長挨拶」の */
     padding: 24px 0 24px 0;
     border-top: 1px solid #34B3E6;
     border-bottom: 1px solid #34B3E6;
@@ -19,6 +19,7 @@ h1 {
 h2 {
     font-size: 40px;
     margin-left: 20px;
+    margin-bottom: 20px;
     display: inline-block;
     border-bottom: 1px solid #34B3E6;
 }
@@ -35,15 +36,18 @@ p {
 /* 背景色の設定 */
 .content-bg-white {
     background-color: #FFFFFF;
-    border-bottom: 1px #000000;
+    border-bottom: 1px solid #000000;
+    padding: 20px 0 20px 0;
 }
-.content-bg-gray {
+.content-bg-gray { /* 背景色がグレーなところはabout.htmlにしかないから、個別にしてもいいかもしれない */
     background-color: #E0DCDC;
+    border-bottom: 1px solid #000000;
+    padding: 20px 0 20px 0;
 }
 
 /* --------------------------------------------- */
 /* 見出しの設定 */
-.keyvisual {
+.keyvisual { /* 四角と円弧でデザインした青いところ */
     width: 100%;
     height: 350px;
     background: #3B4FAC;
@@ -54,7 +58,7 @@ p {
     font-size: 62.5%;
     font-family: "Zen Kaku Gothic New", sans-serif;
 }
-.nav1 {
+.nav1 { /* keyvisual内のナビゲーション */
     position: absolute;
     top: 120px;
     left: -70px;
@@ -79,6 +83,7 @@ p {
 
 /* --------------------------------------------- */
 /* ハンバーガーメニュー */
+/* 参照：https://mik2062.jp/hamburger-css/　の「スマホ用メニューの作成」 */
 .hb-menu_box {
     /*位置の設定*/
     position: fixed;
@@ -138,7 +143,7 @@ p {
 .hb-menu_content {
     position: fixed;
     width: 100%;
-    height: 90%;
+    height: 100%;
     /* 開始位置の設定*/
     top: 0;
     left: 100%;
@@ -151,35 +156,43 @@ p {
 .hb-menu_list {
     padding: 70px 10px 0;
 }
-/* メニュー項目 */
-.hb-menu_item {
-    border-bottom: solid 1px #ffffff;
-    list-style: none;
+/* ハンバーガーメニューのチェックボックスがONの時だけ左端に展開する */
+#hb-menu_check:checked ~ .hb-menu_content {
+  left: 0;
 }
-/* メニュー項目の折りたたみメニュー */
+
+/* メニュー項目全体の設定 */
+.hb-menu_item {
+    list-style: none;
+    display: flex;
+}
+/* メニュー項目の見出し（「Home」とか「About us」）の設定*/
 .hb-menu_summary {
     display: block;
-    width: 100%;
-    font-size: 15px;
+    font-size: 36px;
     box-sizing: border-box;
     color: #ffffff;
     text-decoration: none;
-    padding: 9px 15px 10px 0;
+    padding: 7px 0 7px 20px;
+    width: 250px;     /* 幅を指定することでメニューの詳細の開始位置を揃える */
 }
-/* 折りたたみメニュー展開後の設定 */
+/* 各メニュー項目の詳細 （「About us」内の要素の「About JEARN」とか「理事業挨拶」）の設定*/
 .hb-menu_details {
     display: flex;
     color: #FFFFFF;
 }
 .hb-menu_link {
+    font-size: 32px;
     list-style: none;
-    margin-left: 20px;
+    padding: 7px 35px 7px 0;
 }
 .hb-menu_link a {
     color: #FFFFFF;
 }
 
-/* ハンバーガーメニューのチェックボックスがONの時だけ左端に展開する */
-#hb-menu_check:checked ~ .hb-menu_content {
-  left: 0;
+
+/* 「ページTopへ」の設定 */
+.return-top {
+    font-size: 24px;
+    text-align: center;
 }
