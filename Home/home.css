@@ -22,8 +22,8 @@
     align-items: center;
 }
 .top-title {
+    white-space: nowrap;
     font-size: 60px;  /* figmaでは64px */
-    text-decoration: none;
     font-weight: 400;
 }
 
@@ -36,7 +36,7 @@
     font-weight: 400;
 }
 .content-inner { /* コンテンツ内部の左右の空白調整 */
-    padding: 0 170px 0 170px;
+    padding: 0 150px 0 150px;
 }
 a { /* 「→more」の設定 */
     font-size: 24px;
@@ -68,4 +68,35 @@ a { /* 「→more」の設定 */
     text-align: center;
 }
 
+
+/* レスポンシブデザイン */
+/*@media (max-width: 767px){
+    .content-bg-white-top {
+        display: block;
+        align-items: center;
+    }
+    .top-title{
+        width: 600px;
+    }
+    .top-img {
+        width: 600px;
+        height: 400px;
+    }
+    .top-img-bg {
+        width: 600px;
+        height: 500px;
+        background-color: #3B4FAC;
+        display: flex;
+        align-items: center;
+    }
+    .content-inner {
+        padding: 0 20px 0 20px;
+    }
+    .card { 
+        margin: 0 20px 0 20px;
+    }
+    .card img {
+        min-width: 250px;
+    }
+}*/
 
