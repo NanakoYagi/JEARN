@@ -12,6 +12,7 @@
 .iEARN-icon {
     /* Collaborationのアイコンのcss */
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -32,6 +33,7 @@
 /* Collaborationのcss */
 .collaboration-info {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     line-height: 2;
 }
@@ -46,6 +48,7 @@
 /* Joinのcss */
 .join-info {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     line-height: 2;
 }
