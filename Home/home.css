@@ -1,46 +1,102 @@
-/*トップビジュアル、トップタイトルの設定*/
-.top-visual {
-    display: flex;
+/* ロゴの設定 */
+.logo a {
+    text-align: left;
 }
-.top-img {
-    width: 692px;
+/*トップビジュアル、トップタイトルの設定*/
+.content-bg-white-top { /* home.htmlのトップビジュアルのbgは個別で設定する */
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+.top-img { /* SDGsロゴ */
+    width: 650px;    /* figmaでは692px */
     height: 430px;
 }
-.top-img-bg {
-    width: 692px;
+.top-img-bg { /* SDGsロゴの背景色等 */
+    width: 650px;    /* figmaでは692px */
     height: 581px;
     background-color: #3B4FAC;
     display: flex;
     align-items: center;
 }
 .top-title {
-    font-size: 64px;
-    text-decoration: none;
+    white-space: nowrap;
+    font-size: 60px;  /* figmaでは64px */
+    font-weight: 400;
 }
 
 /*文字や背景の設定*/
-.content-title {
+.content-title { /* home.htmlのみコンテンツタイトルのフォントサイズとかが若干違う */
     display: inline-block;
     border-bottom: 1px solid #34B3E6;
-}
-.content-bg-white {
-    border-bottom: 1px solid #000000;
-}
-h1 {
-    padding-top: 20px;
     margin-left: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
+    font-weight: 400;
 }
-h3 {
-    padding: 0 20px 0 20px;
+.content-inner { /* コンテンツ内部の左右の空白調整 */
+    padding: 0 150px 0 150px;
+}
+a { /* 「→more」の設定 */
+    font-size: 24px;
+    text-align: right;
+    display: block;
+    font-weight: 400;
+}
+.content-bg-white-end { /* 最後のコンテンツbgだけ下線なし */
+    background-color: #FFFFFF;
+    padding: 20px 0 20px 0;
 }
 
-/*カードの設定*/
-.card-container {
+
+/*カード（Our Key words）の設定*/
+.card-container { /* カードを横に並べる */
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
 }
-.card {
-    margin-left: 24px;
-    margin-right: 24px;
+.card { /* カード間の空白の設定 */
+    text-align: center;
+    width: 50%;
+    margin: 0 50px 0 50px;
 }
+
+/* top-imgを除く画像の設定 */
+.logo {
+    text-align: center;
+}
+
+
+/* レスポンシブデザイン */
+/*@media (max-width: 767px){
+    .content-bg-white-top {
+        display: block;
+        align-items: center;
+    }
+    .top-title{
+        width: 600px;
+    }
+    .top-img {
+        width: 600px;
+        height: 400px;
+    }
+    .top-img-bg {
+        width: 600px;
+        height: 500px;
+        background-color: #3B4FAC;
+        display: flex;
+        align-items: center;
+    }
+    .content-inner {
+        padding: 0 20px 0 20px;
+    }
+    .card { 
+        margin: 0 20px 0 20px;
+    }
+    .card img {
+        min-width: 250px;
+    }
+}*/
+
