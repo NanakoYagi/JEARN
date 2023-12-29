@@ -1,0 +1,64 @@
+.iEARN-Logo {
+    /* iEARNのロゴのcss */
+    text-align: center;
+}
+
+.iEARN-info {
+    /* iEARNの説明文のcss */
+    padding: 10%;
+    line-height: 2;
+}
+
+.iEARN-icon {
+    /* Collaborationのアイコンのcss */
+    display: flex;
+    justify-content: center;
+}
+
+/* 以下それぞれのアイコンについてのcss */
+.country-icon {
+    padding: 5%;
+}
+.language-icon {
+    padding: 5%;
+}
+.education-icon {
+    padding: 5%;
+}
+.youth-icon {
+    padding: 5%;
+}
+
+/* Collaborationのcss */
+.collaboration-info {
+    display: flex;
+    justify-content: center;
+    line-height: 2;
+}
+.collaboration-info a {
+    text-decoration: none;
+}
+.collaboration-text {
+    padding: 5%;
+    transform: translate(0%, -10%);
+}
+
+/* Joinのcss */
+.join-info {
+    display: flex;
+    justify-content: center;
+    line-height: 2;
+}
+.join-info a {
+    text-decoration: none;
+}
+.join-text {
+    padding: 5%;
+    transform: translate(0%, 10%);
+}
+
+/* ページTopへ戻るボタンのcss */
+.page-end a {
+    text-decoration: none;
+    color: #000;
+}
