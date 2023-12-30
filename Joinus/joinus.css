@@ -1,0 +1,76 @@
+.check-icon{
+    height: 70%;
+    width: 70%;
+}
+
+.arrow-icon{
+    height: 10%;
+    width: 10%;
+    margin-right: 3%;
+}
+
+.form-icon{
+    height: 70%;
+    width: 70%;
+
+}
+
+.yen-icon{
+    height: 70%;
+    width: 70%;
+    margin-right: 3%;
+}
+
+.iearn-logo{
+    height: 35%;
+    width: 70%;
+} 
+
+.flow-icons{
+    text-align: center;
+    display: flex;
+}
+
+
+.check{
+    display:block;
+}
+
+p{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+h2{
+    margin-top: 80px;
+}
+
+table{
+    text-align: center;
+    border: 1px black solid;
+}
+
+th, td{
+    border: 1px black solid;
+}
+
+.column1{
+    background-color: #3BACAC;
+}
+
+.column3{
+    background-color: #d9d9d9;
+}
+
+.column5{
+    background-color: #d9d9d9;
+}
+
+.column7{
+    background-color: #d9d9d9;
+}
+
+.column9{
+    background-color: #d9d9d9;
+}
