@@ -1,34 +1,39 @@
 .check-icon{
-    height: 70%;
-    width: 70%;
+    max-width: 100%;
+    height: auto;
 }
 
 .arrow-icon{
-    height: 10%;
-    width: 10%;
-    margin-right: 3%;
+    width: 5%;
+    height: 100%;
+    /* margin-right: 3%; */
 }
 
 .form-icon{
-    height: 70%;
-    width: 70%;
+    max-width: 125%;
+    height: auto;
 
 }
 
 .yen-icon{
-    height: 70%;
-    width: 70%;
-    margin-right: 3%;
+    max-width: 150%;
+    height: auto;
+    margin-right: 10%;
 }
 
 .iearn-logo{
-    height: 35%;
-    width: 70%;
+    max-width: 100%;
+    height: auto;
 } 
 
 .flow-icons{
-    text-align: center;
     display: flex;
+    margin: auto;
+    margin-left: 10%;
+}
+
+.flow-text{
+    font-size: 16px;
 }
 
 
@@ -37,7 +42,7 @@
 }
 
 p{
-    font-size: 16px;
+    /* font-size: 16px; */
     font-weight: 500;
     margin-bottom: 0;
 }
@@ -46,9 +51,10 @@ h2{
     margin-top: 80px;
 }
 
-table{
-    text-align: center;
+/*表のスタイル*/
+.kind-table{
     border: 1px black solid;
+    margin: auto;
 }
 
 th, td{
@@ -73,4 +79,61 @@ th, td{
 
 .column9{
     background-color: #d9d9d9;
+}
+
+.table-text{
+    margin: auto;
+}
+
+.register-table{
+    display: flex;
+    margin: auto;
+    width: 80%;
+    height: 100%;
+}
+
+.transfer-table{
+display: flex;
+}
+
+.register-button img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; /* width, heightといっしょに使います */
+    opacity: 0.7;
+    background-color: black;
+}
+
+.register-button{
+    display: flex;
+    
+} 
+
+.register-img:hover{
+    opacity: 1;
+}
+
+.form-img1{
+    background-color: black;
+}
+
+.form-img2{
+    background-color: black;
+}
+
+.form-img3{
+    background-color: black;
+}
+
+.form-img4{
+    background-color: black;
+}
+
+.form1-text{
+    color: white;
+    font-size: 15px;
+    position: relative;
+    /* top: 50%;
+    left: 50%; */
+    transform: translate(0,-500%); 
 }
