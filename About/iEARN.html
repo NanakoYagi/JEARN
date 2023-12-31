@@ -3,9 +3,290 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="../About/about.css">
+    <link rel="stylesheet" href="../About/iEARN.css">
     <title>About iEARN | JEARN></title>
 </head>
-<body>
-    
+
+<body class="bo">
+    <!--ヘッダー-->
+    <header>
+        <div class="main-menu">
+            <div class="logo">
+                <a href="L">
+                    <a href="../Home/home.html">
+                        <img src="../img/jearn-logo.png" alt="JEARN">
+                    </a>
+                </a>
+            </div>
+            <div class="menu1">
+                <a href="../Joinus/joinus.html">
+                    <img src="../img/header/icons8-パズルピース-50.png" alt="Join us">
+                </a>
+                <p class="add">Join us</p>
+            </div>
+            <div class="menu2">
+                <a href="menu2">
+                    <img src="../img/header/icons8-globe-50.png" alt="Language" class="lang">
+                </a>
+                <p class="add">Language</p>
+            </div>
+            
+            <!--ハンバーガーメニュー-->
+            <div class="hb-menu">
+                <!--三本線の表示-->
+                <input type="checkbox" id="hb-menu_check">
+                <label for="hb-menu_check" class="hb-menu_box">
+                    <span></span>
+                </label>
+
+                <!--メニューの内容-->
+                <div class="hb-menu_content">
+                    <ul class="hb-menu_list">
+
+                        <li class="hb-menu_item">
+                            <a class="hb-menu_summary" href="#">Home</a>
+                        </li>
+
+                        <li class="hb-menu_item">
+                            <details>
+                                <summary class="hb-menu_summary">About us</summary>
+                                    <ul class="hb-menu_details">
+                                        <li class="hb-menu_link"><a href="">About JEARN</a></li>
+                                        <li class="hb-menu_link"><a href="">理事長挨拶</a></li>
+                                        <li class="hb-menu_link"><a href="">iEARN</a></li>
+                                    </ul>
+                            </details>
+                        </li>
+
+                        <li class="hb-menu_item">
+                            <details>
+                                <summary class="hb-menu_summary">国際協働学習</summary>
+                                    <ul class="hb-menu_details">
+                                        <li class="hb-menu_link"><a href="">国際協働学習とは</a></li>
+                                        <li class="hb-menu_link"><a href="">プロジェクト</a></li>
+                                    </ul>
+                            </details>
+                        </li>
+
+                        <li class="hb-menu_item">
+                            <details>
+                                <summary class="hb-menu_summary">Publication</summary>
+                                    <ul class="hb-menu_details">
+                                        <li class="hb-menu_link"><a href="">オンラインジャーナル</a></li>
+                                        <li class="hb-menu_link"><a href="">論文等</a></li>
+                                    </ul>
+                            </details>
+                        </li>
+
+                        <li class="hb-menu_item">
+                            <details>
+                                <summary class="hb-menu_summary">Events</summary>
+                                    <ul class="hb-menu_details">
+                                        <li class="hb-menu_link"><a href="">開催予定のイベント</a></li>
+                                    </ul>
+                            </details>
+                        </li>
+
+                        <li class="hb-menu_item">
+                            <details>
+                                <summary class="hb-menu_summary">Archives</summary>
+                                    <ul class="hb-menu_details">
+                                        <li class="hb-menu_link"><a href="">シンポジウム</a></li>
+                                        <li class="hb-menu_link"><a href="">講演会</a></li>
+                                        <li class="hb-menu_link"><a href="">学習会</a></li>
+                                        <li class="hb-menu_link"><a href="">記事・講義録</a></li>
+                                        <li class="hb-menu_link"><a href="">プロジェクト</a></li>
+                                    </ul>
+                            </details>
+                        </li>
+
+                        <li class="hb-menu_item">
+                            <details>
+                                <summary class="hb-menu_summary">Join us! FAQ</summary>
+                                    <ul class="hb-menu_details">
+                                        <li class="hb-menu_link"><a href="">加入方法</a></li>
+                                        <li class="hb-menu_link"><a href="">加入フォーム</a></li>
+                                        <li class="hb-menu_link"><a href="">FAQ</a></li>
+                                        <li class="hb-menu_link"><a href="">お問い合わせ</a></li>
+                                    </ul>
+                            </details>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!--メインコンテンツ-->
+    <!--見出し-->
+    <main>
+        <div class="keyvisual">
+            <nav class="nav1">
+                <ul class="nav2">
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">About us</a>
+                    </li>
+                    <li class="last">
+                        <a href="">JEARN</a>
+                    </li>
+                </ul>
+            </nav>
+            <h1>About us</h1>
+        </div>
+
+        
+        <!--テキスト-->
+        <div class="content-bg-white">
+            <h1 class="page-title">iEARN</h1>
+                
+            <div class="iEARN-Logo">
+                <a href="https://www.iearn.org/" target="_blank">
+                    <img src="../img/Logo@2x.png" alt="iEARN">
+                </a>
+            </div>
+
+            <h1>"Learn with the world, not just about it"</h1>
+
+            <p class="iEARN-info">
+                アイアーン（iEARN: International Education and Resource Network）は1988年に設立され<br>
+                た、世界100カ国以上の教育者、教育機関、生徒がプロジェクト参加する教育NGOです。<br>
+                JEARNはiEARNの日本センターとして設立され、iEARNで実施されているイベントやプ<br>
+                ロジェクトへの参加を推奨しています。<br>
+            </p>
+
+            <h2>Collaboration</h2>
+            <div class="iEARN-icon">
+                <div class="country-icon">
+                    <img src="../img/iERAN/icons8-earth-100.png" alt="Country">
+                    <p>140 Countries</p>
+                </div>
+                <div class="language-icon">
+                    <img src="../img/iERAN/icons8-chat-100.png" alt="Language">
+                    <p>30 languages</p>
+                </div>
+                <div class="education-icon">
+                    <img src="../img/iERAN/icons8-group-100.png" alt="Education">
+                    <p>50,000 education</p>
+                </div>
+                <div class="youth-icon">
+                    <img src="../img/iERAN/icons8-library-building-100.png" alt="Youth">
+                    <p>2,000,000 youth</p>
+                </div>
+            </div>
+                
+            <div class="collaboration-info">
+                <p class="collaboration-text">
+                    iEARNでは教師や生徒が企画するプロジェク<br>
+                    トが毎年立てられています。<br>
+                    世界中の様々な地域の教育者や生徒が協力し<br>
+                    て社会問題にチャレンジしてます。<br>
+                    <a href="../study/project/.html" class="more">→more</a>
+                </p>
+                <img src="../img/iERAN/iEARN プロジェクト例画像.png" alt="iEARN" width="50%" height="30%">
+            </div>
+            <br>
+
+            <h2>How to join iEARN?</h2>
+            <div class="join-info">
+                <p class="join-text">
+                    iEARN プロジェクトやイベントに参加するには<br>
+                    JEARNからの登録をおすすめします。<br>
+                    <a href="../Joinus/joinus.html">→Join us</a>
+                </p>
+                <img src="../img/iERAN/2023_2024projectbook_s.png" alt="How to join" width="30%" height="50%">
+            </div>
+            <div class="page-end">
+                <a href="#"><p>ページTopへ</p></a>
+            </div>
+        </div>
+
+
+
+    </main>
+    <footer class="footerwrap">
+        <!-- フッター -->
+        <div class="end">
+            <!--住所など-->
+            <div class="address">
+                <p class="NPO">
+                    NPO法人　JEARN
+                    <br>
+                    〒000-0000
+                    <br>
+                    東京都練馬区00000000
+                </p>
+                <p class="mail">
+                    Mail:aaaa@aaaaaa
+                </p>
+                <!--SNS icon-->
+                <div class="SNSicon">
+                    <ul class="footernav">
+                        <li class="twitter">
+                            <a href="https://twitter.com/iearnusa" target="_blank">
+                                <img src="../img/footer/icons8-twitter-50.png" alt="twitter">
+                            </a>
+                        </li>
+                        <li class="facebook">
+                            <a href="https://www.facebook.com/npojearn" target="_blank">
+                                <img src="../img/footer/icons8-app-50.png" alt="facebook">
+                        </li>
+                        <li class="youtube">
+                            <a href="https://www.youtube.com/channel/UC0OE6_SFYoUb1Ct1gzO7FYw" target="_blank">
+                                <img src="../img/footer/icons8-app-50 (1).png" alt="youtube">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="SDGs">
+                <img src="../img/footer/SDGs-2.png" alt="SDGs">
+            </div>
+            <div class="footermenu">
+                <ul class="footernav2">
+                    <li>
+                        <a href="../Home/home.html">Home</a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="../About/about.html">About us</a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="../Study/study.html">国際協働学習</a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="../Publication/publication.html">Publication</a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="../Events/event-top.html">Events</a>  
+                    </li>
+                    <br>
+                    <li>
+                        <a href="../Archive/symposium.html">Archive</a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="../Joinus/joinus.html">Join us/FAQ</a>
+                    </li>
+                    <li>
+                        <a href="">&emsp;&emsp;プライバシーの考え方</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copy">
+            <p>
+                Copyright©JEARN
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
