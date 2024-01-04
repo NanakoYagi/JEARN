@@ -11,3 +11,8 @@ a[target=_blank] {
 h2{
     border: none;
 }
+
+.movie{
+    margin-top: 30px;
+    text-align: center;
+}
