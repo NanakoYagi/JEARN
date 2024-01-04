@@ -1,0 +1,46 @@
+/*トップビジュアル、トップタイトルの設定*/
+.top-visual {
+    display: flex;
+}
+.top-img {
+    width: 692px;
+    height: 430px;
+}
+.top-img-bg {
+    width: 692px;
+    height: 581px;
+    background-color: #3B4FAC;
+    display: flex;
+    align-items: center;
+}
+.top-title {
+    font-size: 64px;
+    text-decoration: none;
+}
+
+/*文字や背景の設定*/
+.content-title {
+    display: inline-block;
+    border-bottom: 1px solid #34B3E6;
+}
+.content-bg-white {
+    border-bottom: 1px solid #000000;
+}
+h1 {
+    padding-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 60px;
+}
+h3 {
+    padding: 0 20px 0 20px;
+}
+
+/*カードの設定*/
+.card-container {
+    display: flex;
+    justify-content: center;
+}
+.card {
+    margin-left: 24px;
+    margin-right: 24px;
+}
