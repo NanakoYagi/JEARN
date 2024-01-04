@@ -1,0 +1,146 @@
+/* .check-icon{
+    max-width: 100%;
+    height: auto;
+}*/
+/*
+.arrow-icon{
+    width: 5%;
+    height: 100%;
+    margin-right: 3%;
+}*/
+
+/* .form-icon{
+    max-width: 125%;
+    height: auto;
+
+}
+
+.yen-icon{
+    max-width: 150%;
+    height: auto;
+    margin-right: 10%;
+}
+
+.iearn-logo{
+    max-width: 100%;
+    height: auto;
+} 
+
+.flow-icons{
+    display: flex;
+    margin: auto;
+    margin-left: 10%;
+}
+
+.flow-text{
+    font-size: 16px;
+}
+
+
+.check{
+    display:block;
+} */ 
+
+.iEARN-icon {
+    /* Collaborationのアイコンのcss */
+    display: flex;
+    justify-content: center;
+}
+
+/* 以下それぞれのアイコンについてのcss */
+.check-icon {
+    padding: 5%;
+    width: 90%;
+    height: auto;
+}
+.form-icon {
+    padding: 5%;
+    width: 90%;
+    height: auto;
+}
+.yen-icon {
+    padding: 5%;
+    width: 90%;
+    height: auto;
+}
+.iearn-logo {
+    padding: 5%;
+    width: 90%;
+    height: auto;
+    transform: translate(0, 50px);
+}
+
+.iearn-text{
+    transform: translate(0, 55px);
+}
+
+
+p{
+    /* font-size: 16px; */
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+h2{
+    margin-top: 80px;
+}
+
+/*表のスタイル*/
+table{
+    margin-left: 50px;
+}
+.kind-table{
+    border: 1px black solid;
+    margin: auto;
+}
+
+th, td{
+    border: 1px black solid;
+}
+
+.column1{
+    background-color: #3BACAC;
+}
+
+.column3{
+    background-color: #d9d9d9;
+}
+
+.column5{
+    background-color: #d9d9d9;
+}
+
+.column7{
+    background-color: #d9d9d9;
+}
+
+.column9{
+    background-color: #d9d9d9;
+}
+
+.table-text{
+    margin-left: 30px;
+}
+
+.register-table{
+    display: flex;
+    margin: auto;
+    width: 80%;
+    height: 100%;
+}
+
+
+.table-left{
+    float: left;
+}
+
+
+.iearn-account{
+    text-align: left;
+}
+
+.card-img-top{
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; /* width, heightといっしょに使います */
+}
