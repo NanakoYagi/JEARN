@@ -13,6 +13,7 @@
 /*リンクの変色の設定*/
 a:link {
     color: #0A2397;
+    text-decoration: none;
 }
 
 a:visited {
@@ -21,7 +22,9 @@ a:visited {
 
 a:hover {
     color: #5c6797;
+    text-decoration: underline;
 }
+
 
 /* ページTopへ戻るボタンのcss */
 .page-end a {
