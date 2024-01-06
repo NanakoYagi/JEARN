@@ -1,3 +1,25 @@
-p{
+/* 見出しのcss */
+.greeting {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5%;
+   }
+
+.greeting-text {
+    padding: 5%;
+    transform: translate(-20%, -5%);
+
+}
+
+/*本文のcss*/
+.detail{
     text-align: center;
+    padding: 8%;
+}
+
+/* ページTopへ戻るボタンのcss */
+.page-end a {
+    text-decoration: none;
+    color: #000;
 }
