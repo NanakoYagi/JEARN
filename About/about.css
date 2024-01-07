@@ -2,11 +2,14 @@
 .gray{
   background-color: #E0DCDC;
 }
+.gray p{ /*p(本文）の位置の調整*/
+  padding: 10px 50px 20px;
+}
 
 /*背景が白の部分のcss*/
-.white{
-  
-}
+.white p{ /*p(本文)の位置の調整*/
+  padding: 10px 50px 20px;
+ }
 
 /*メニューバーのcss*/
 .about-menu{
