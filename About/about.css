@@ -1,0 +1,114 @@
+/*背景がグレーの部分のcss*/
+.gray{
+  background-color: #E0DCDC;
+}
+
+/*背景が白の部分のcss*/
+.white{
+  
+}
+
+/*メニューバーのcss*/
+.about-menu{
+    display: flex;
+    /* 水平方向の中央揃え */
+  margin: 0 auto;
+}
+
+/*左の縦2個のcss*/
+#nav1 {
+    list-style: none;
+  }
+   
+  #nav li {
+    width: 140px;
+    text-align: center;
+  }
+   
+  #nav li a {
+    text-decoration: none;
+  }
+/*真ん中の縦３個のcss*/
+  #nav2 {
+    list-style: none;
+  }
+   
+  #nav li {
+    width: 140px;
+    text-align: center;
+  }
+   
+  #nav li a {
+    text-decoration: none;
+  }
+
+/*右の縦２個のcss*/
+  #nav3 {
+    list-style: none;
+  }
+   
+  #nav li {
+    width: 140px;
+    text-align: center;
+  }
+   
+  #nav li a {
+    text-decoration: none;
+  }
+
+
+/*見出しのcss*/
+.title
+{text-align: left;
+}
+
+/*カード（Our Partners）の設定*/
+.card-body {
+  background-color: #E0DCDC;
+}
+
+.card-container { /* カードを横に並べる */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.card { /* カード間の空白の設定 */
+    text-align: center;
+    width: 50%;
+    margin: 0 50px 0 50px;
+}
+
+/* what We Do のアイコンのcss */
+.gakusyu-icon {
+  padding: 5%;
+  background-color: #E0DCDC;
+}
+
+.project-icon {
+  padding: 5%;
+  background-color: #E0DCDC;
+}
+
+.event-icon{
+  padding: 5%;
+  background-color: #E0DCDC;
+}
+
+
+ /*組織概要の本文のcss*/
+.sosiki{ 
+    text-align: left;
+}
+/* ページTopへ戻るボタンのcss */
+.page-end a {
+    text-decoration: none;
+    color: #000;
+}
+
+.about-menu{
+    display: flex;
+
+    /* 水平方向の中央揃え */
+  margin: 0 auto;
+}
