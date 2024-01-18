@@ -13,9 +13,14 @@
 
 /*メニューバーのcss*/
 .about-menu{
-    display: flex;
+    text-align: center;/*テキストの位置*/
+    margin: auto;
+    /*メニュー全体を中央に寄せる*/
+    width: fit-content;
+    margin: auto;
     /* 水平方向の中央揃え */
-  margin: 0 auto;
+  margin: 10 auto;
+   
 }
 
 /*左の縦2個のcss*/
@@ -25,7 +30,6 @@
    
   #nav li {
     width: 140px;
-    text-align: center;
   }
    
   #nav li a {
@@ -38,7 +42,7 @@
    
   #nav li {
     width: 140px;
-    text-align: center;
+    
   }
    
   #nav li a {
@@ -52,7 +56,6 @@
    
   #nav li {
     width: 140px;
-    text-align: center;
   }
    
   #nav li a {
