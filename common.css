@@ -118,11 +118,10 @@ p {
     /* 縦線のcss */
     /* border-left: #000 1px solid;*/
     padding-top: 3%;
-    padding-left: 15%;
+    padding-left: 20%;
     padding-right: 3%;
-    transform: translate(30%, 0%); 
+    transform: translate(10%, 0%); 
     width: 10%; 
-    max-width: 10%;
 }
 .menu2 {
     /* 縦線のcss */
@@ -159,7 +158,7 @@ p {
 }
 .nav2 li {
     display: inline;
-    font-size: 11px;
+    font-size: 16px;
     line-height: 1.75;
 }
 .nav2 li ::after {
@@ -176,6 +175,10 @@ p {
     color: currentColor;
     text-decoration: none;
 }  
+
+.nav2 a:hover {
+    text-decoration: underline;
+}
 
 /* --------------------------------------------- */
 /* フッターの設定 */
@@ -202,6 +205,11 @@ p {
     font-size: 11px;
     line-height: 1.75;
 }
+
+.footernav2 li a:hover {
+    text-decoration: underline;
+}
+
 .NPO {
     text-align: left;
     font-size: 16px;
@@ -210,9 +218,13 @@ p {
     text-align: left;
     font-size: 16px;
 }
-.footernav {
-    padding: 0%;
-}
+/* .footernav {
+    position: relative;
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 30%;
+    display: flex;
+} */
 .address {
     position: relative;
     padding: 10px;
@@ -223,10 +235,12 @@ p {
     text-decoration: none;
 }
 .SDGs {
-    position: relative;
-    padding: 10px;
-    padding-top: 5%;
-    padding-left: 5%;
+    margin-top: 2%;
+    /* transform: translate(-130px); */
+    padding-right: 25%;
+    /* padding: 10px; */
+    /* padding-top: 5%;
+    padding-left: 5%; */
 }
 .SDGs a {
     color: #FFFFFF;
@@ -234,12 +248,16 @@ p {
 }
 .footermenu {
     position: relative;
-    padding: 10px;
-    width: 30%;
+    /* padding: 10px; */
+    width: 40%;
 }
 .footernav2 a{
     color: #FFFFFF;
      text-decoration: none;
+}
+
+.SNSicon {
+    margin-top: 8%;
 }
 .pry a {
     color: #FFFFFF;
