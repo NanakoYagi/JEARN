@@ -4,6 +4,34 @@
 /* 文字の設定 */
 @import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap');
 
+
+
+.container-fluid{
+    text-align: left;
+}
+
+/*リンクの変色の設定*/
+a:link {
+    color: #0A2397;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #0A2397;
+}
+
+a:hover {
+    color: #5c6797;
+    text-decoration: underline;
+}
+
+
+/* ページTopへ戻るボタンのcss */
+.page-end a {
+    text-decoration: none;
+    color: #000;
+}
+
 body {
     font-family: 'Zen Kaku Gothic New', sans-serif;
     margin: 0 auto;
@@ -325,4 +353,8 @@ p {
 .return-top {
     font-size: 24px;
     text-align: center;
+}
+
+.copyright{
+    font-size: 12px;
 }
