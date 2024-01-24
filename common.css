@@ -91,7 +91,6 @@ p {
     width: 100%;
     height: 250px;
     background: #3B4FAC;
-    display: flex;
     justify-content: center;
     align-items: center;
     color: white;
@@ -328,7 +327,7 @@ p {
 /* メニュー項目の見出し（「Home」とか「About us」）の設定*/
 .hb-menu_summary {
     display: block;
-    font-size: 36px;
+    font-size: 32px;
     box-sizing: border-box;
     color: #ffffff;
     text-decoration: none;
