@@ -1,3 +1,29 @@
-p{
+/* 見出しのcss */
+.greeting {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5%;
+   }
+
+.greeting-text {
+    padding: 5%;
+    transform: translate(-20%, -5%);
+
+}
+
+.rijicho-picture{ /*写真に影をつける*/
+    box-shadow: 15px 15px 0px 0 rgb(161, 157, 157);
+}
+
+/*本文のcss*/
+.detail{
     text-align: center;
+    padding: 8%;
+}
+
+/* ページTopへ戻るボタンのcss */
+.page-end a {
+    text-decoration: none;
+    color: #000;
 }
