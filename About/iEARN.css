@@ -65,3 +65,70 @@
     text-decoration: none;
     color: #000;
 }
+
+/* レスポンシブデザイン */
+@media (max-width: 767px){
+    .keyvisual {
+        width: 193%;
+        padding: 1%;
+    }
+     .title {
+        width: 100%;
+        padding: 1%;
+    } 
+    .page-title {
+        width: 193%;
+        padding: 1%;
+    }
+    .cliché {
+        width: 193%;
+        padding: 1%;
+    } 
+    .iEARN-Logo {
+        width: 193%;
+        padding: 1%;
+    }
+    .iEARN-info {
+        padding: 5%;
+        line-height: 1.5;
+        width: 185%;
+    }
+    .iEARN-icon {
+        padding: 1%;
+        width: 193%;
+    }
+    .collaboration-info {
+        line-height: 1.5;
+        width: 193%;
+        padding: 1%;
+    }
+    .collaboration-text {
+        padding: 1%;
+        transform: translate(0%, 0%);
+        width: 193%;
+    }
+    .join-info {
+        line-height: 1.5;
+        width: 193%;
+        padding: 1%;
+    }
+    .join-text {
+        padding: 1%;
+        transform: translate(0%, 0%);
+        width: 193%;
+    }
+    .page-end {
+        width: 193%;
+        padding: 1%;
+    }
+    .end{
+        width: 193%;
+        background-color: #3b4fac;
+        padding: 1%;
+    }
+    .copy {
+        width: 193%;
+        background-color: #3b4fac;
+        padding: 1%;
+    }
+}
