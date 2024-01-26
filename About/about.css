@@ -56,11 +56,27 @@
    
   #nav li {
     width: 140px;
+    
   }
    
   #nav li a {
     text-decoration: none;
   }
+
+  .about-menu li{
+    font-size: 24px;
+    margin-right: 100px;
+    margin-left: 100px;
+    /* list-style-type: none;
+    background-color: #fff;
+    color: #000;
+    flex-grow: 1; */
+  }
+
+   /* .about-menu li+li{
+    border-left: 1px solid #000;
+  }  */
+
 
 
 /*見出しのcss*/
@@ -122,4 +138,37 @@
 
     /* 水平方向の中央揃え */
   margin: 0 auto;
+}
+
+h1{
+  margin-top: 30px;
+}
+
+h2{
+  margin-top: 30px;
+}
+
+p{
+  margin-bottom: 30px;
+}
+
+.rijicho-picture{ /*写真に影をつける*/
+  box-shadow: 15px 15px 0px 0 rgb(161, 157, 157);
+}
+
+.greeting {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* margin-top: 5%; */
+ }
+
+.greeting-text {
+  padding: 5%;
+  transform: translate(-20%, -5%);
+
+}
+
+.instruction{
+  margin-top: 30px;
 }
