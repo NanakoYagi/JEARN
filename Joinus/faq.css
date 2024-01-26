@@ -1,6 +1,13 @@
 .otoiawase-text{
     margin-top: 3%;
     margin-bottom: 3%;
+    
+}
+
+.otoiawase{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    text-align: center;
 }
 
 a[target=_blank] {
@@ -15,4 +22,16 @@ h2{
 .movie{
     margin-top: 30px;
     text-align: center;
+}
+
+.containet py-5{
+ border: none;   
+}
+
+.accordion{
+    border: none;
+}
+
+.accordion-item{
+    border: none;
 }
