@@ -172,3 +172,7 @@ p{
 .instruction{
   margin-top: 30px;
 }
+
+.sosiki-block p{
+  margin: 0%;
+}
