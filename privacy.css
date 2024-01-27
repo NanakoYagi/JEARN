@@ -1,11 +1,11 @@
-p{
+.main-text p{
     font-size: 16px;
     text-align: left;
     font-weight: 400;
     margin: 0 10% 0 10%;
 }
 
-li{
+.main-text li{
     font-size: 16px;
     text-align: left;
     font-weight: 400;

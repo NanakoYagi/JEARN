@@ -13,27 +13,26 @@
 </head>
 <header>
     <div class="main-menu">
-        <div class="logo">
-            <a href="L">
-                <a href="../Home/home.html">
-                    <img src="../img/jearn-logo.png" alt="JEARN" id="Jearn-logo">
+        <div class="header">
+            <div class="logo">
+                    <a href="../Home/home.html">
+                        <img src="../img/jearn-logo.png" alt="JEARN" class="jearn-logo" id="jearn-logo">
+                    </a>
+            </div>
+            <div class="menu1">
+                <a href="../Joinus/joinus.html">
+                    <img src="../img/header/icons8-パズルピース-50.png" alt="Join us" class="join-logo">
+                    <p class="">Join!</p>
                 </a>
-            </a>
+            </div>    
+            <div class="menu2">
+                <a href="https://translate.google.com/?hl=ja&sl=ja&tl=en&op=websites">
+                    <img src="../img/header/icons8-globe-50.png" alt="Language" class="lang">
+                    <p class="add">Language</p>
+                </a>
+            </div> 
         </div>
-        <div class="menu1">
-            <a href="../Joinus/joinus.html">
-                <img src="../img/header/icons8-パズルピース-50.png" alt="Join us">
-            </a>
-            <p class="add">Join us</p>
-        </div>
-        <div class="menu2">
-            <a href="menu2">
-                <img src="../img/header/icons8-globe-50.png" alt="Language" class="lang">
-            </a>
-            <p class="add">Language</p>
-        </div>
-        
-        <!--ハンバーガーメニュー-->
+    <!--ハンバーガーメニュー-->
         <div class="hb-menu">
             <!--三本線の表示-->
             <input type="checkbox" id="hb-menu_check">
@@ -46,16 +45,21 @@
                 <ul class="hb-menu_list">
 
                     <li class="hb-menu_item">
-                        <a class="hb-menu_summary" href="#">Home</a>
+                        <details>
+                            <summary class="hb-menu_summary">Home</summary>
+                                <ul class="hb-menu_details">
+                                    <a class="hb-menu_summary" href="../home.html">Home</a>
+                                </ul>
+                        </details>
                     </li>
 
                     <li class="hb-menu_item">
                         <details>
                             <summary class="hb-menu_summary">About us</summary>
                                 <ul class="hb-menu_details">
-                                    <li class="hb-menu_link"><a href="">About JEARN</a></li>
-                                    <li class="hb-menu_link"><a href="">理事長挨拶</a></li>
-                                    <li class="hb-menu_link"><a href="">iEARN</a></li>
+                                    <li class="hb-menu_link"><a href="../About/about.html">About JEARN</a></li>
+                                    <li class="hb-menu_link"><a href="../About/rijicho.html">理事長挨拶</a></li>
+                                    <li class="hb-menu_link"><a href="../About/iEARN.html">iEARN</a></li>
                                 </ul>
                         </details>
                     </li>
@@ -106,11 +110,17 @@
                         <details>
                             <summary class="hb-menu_summary">Join us! FAQ</summary>
                                 <ul class="hb-menu_details">
-                                    <li class="hb-menu_link"><a href="">加入方法</a></li>
+                                    <li class="hb-menu_link"><a href="joinus.html">加入方法</a></li>
                                     <li class="hb-menu_link"><a href="">加入フォーム</a></li>
-                                    <li class="hb-menu_link"><a href="">FAQ</a></li>
-                                    <li class="hb-menu_link"><a href="">お問い合わせ</a></li>
+                                    <li class="hb-menu_link"><a href="faq.html">FAQ</a></li>
+                                    <li class="hb-menu_link"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdlYnPmz2PLG7RJ-xQAqFJ7KKT9BsNmiGKWjkBV-ECuPpphXw/viewform" target="_blanck">お問い合わせ</a></li>
                                 </ul>
+                        </details>
+                    </li>
+
+                    <li class="hb-menu_item">
+                        <details>
+                            <summary class="hb-menu_summary">Translation</summary>
                         </details>
                     </li>
                 </ul>
@@ -119,7 +129,6 @@
     </div>
 </header>
 
-
 <!--メインコンテンツ-->
 <!--見出し-->
 <main>
@@ -127,13 +136,13 @@
         <nav class="nav1">
             <ul class="nav2">
                 <li>
-                    <a href="">Home</a>
+                    <a href="../home.html">Home</a>
                 </li>
                 <li>
-                    <a href="">Join us/FAQ</a>
+                    <a href="joinus.html">Join us/FAQ</a>
                 </li>
                 <li class="last">
-                    <a href="">FAQ</a>
+                    <a href="joinus.html">Join us!</a>
                 </li>
             </ul>
         </nav>
@@ -144,7 +153,7 @@
         <h1 class="page-title">FAQ</h1>
     </div>
     <h2>会員登録の流れ</h2>
-    <div class="iEARN-icon">
+    <!-- <div class="iEARN-icon">
         <div class="check-icon">
             <img src="../img/joinus/check.png" class="check-img">
             <p>1，会員の種類をチェック</p>
@@ -160,8 +169,67 @@
         <div class="iEARN-logo">
             <img src="../img/joinus/iEARN-logo.png" alt=""class="iearn-logo">
             <p class="iearn-text">4，iEARNアカウントの作成</p>
+        </div> -->
+    <!-- </div> -->
+    
+    <div class="card-group">
+        <div class="card border-0">
+            <div class="gakusyu-icon">
+            <img src="../img/joinus/check.png"  alt="..." class="icon">
+            </div>
+          <div class="card-body">
+            <h4 class="card-title">会員の種類をチェック</h4>
+          </div>
+        </div>
+
+        <div class="card border-0">
+            <div class="arrow-icon">
+            <img src="../img/joinus/arrow.png" alt="...">
+            </div>
+        </div>
+
+        <div class="card border-0">
+            <div class="gakusyu-icon">
+            <img src="../img/joinus/document.png"  alt="..." class="icon">
+            </div>
+          <div class="card-body">
+            <h4 class="card-title">フォームを入力</h4>
+          </div>
+        </div>
+
+        <div class="card border-0">
+            <div class="arrow-icon">
+            <img src="../img/joinus/arrow.png" alt="...">
+            </div>
+        </div>
+
+        <div class="card border-0">
+            <div class="gakusyu-icon">
+                <img src="../img/joinus/yen-sign.png" alt="" class="icon">
+            </div>
+            <div class="card-body">
+                <h4 class="card-title">会費の振込</h4>
+            </div>
+        </div>
+
+        <div class="card border-0 style="width: 0.5rem;">
+            <div class="arrow-icon">
+            <img src="../img/joinus/arrow.png" alt="...">
+            </div>
+        </div>
+
+
+        <div class="card border-0">
+            <div class="icon">
+          <img src="../img/joinus/iEARN-logo.png" alt="..." class="iearn-logo">
+        </div>
+          <div class="card-body">
+            <h4 class="card-title">iEARNアカウントの作成</h4>
+          </div>
         </div>
     </div>
+</div>
+
     <h2>1, 会員の種類をチェック</h2>
     <div>
         <table class="kind-table">
@@ -234,7 +302,7 @@
             <img src="../img/joinus/form1.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">個人会員（日本語）</h5>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdGlS8BcPUs78Ys6YdT6SM3gI3_-cDSxOPEzdGwLguGdHO4Dw/viewform" class="btn btn-primary" target="_blank">会員登録</a>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdGlS8BcPUs78Ys6YdT6SM3gI3_-cDSxOPEzdGwLguGdHO4Dw/viewform" class="btn btn-outline-primary" target="_blank">会員登録</a>
             </div>
           </div>
         </div>
@@ -243,7 +311,7 @@
             <img src="../img/joinus/form2.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Personal Member（En）</h5>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfVGE5exSXVFs6WICiwl5AatOb6R6tfyTpDL5Hk1Yd5cet_nw/viewform" class="btn btn-primary" target="_blank">Application</a>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfVGE5exSXVFs6WICiwl5AatOb6R6tfyTpDL5Hk1Yd5cet_nw/viewform" class="btn btn-outline-primary" target="_blank">Application</a>
             </div>
           </div>
         </div>
@@ -252,7 +320,7 @@
             <img src="../img/joinus/form3.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">グループ会員</h5>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLScEDs1NQ75_g2sQWob8JlVt8FT6rRu8xWQGEXt5KMTaa1n9eQ/viewform" class="btn btn-primary" target="_blank">会員登録</a>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLScEDs1NQ75_g2sQWob8JlVt8FT6rRu8xWQGEXt5KMTaa1n9eQ/viewform" class="btn btn-outline-primary" target="_blank">会員登録</a>
             </div>
           </div>
         </div>
@@ -261,7 +329,7 @@
             <img src="../img/joinus/form4.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">法人会員</h5>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeduTuFIsoqsv2fTrqmGB3HPSkC-PjmVNUt0F9bMQT2-zhwRA/viewform" class="btn btn-primary" target="_blank">会員登録</a>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeduTuFIsoqsv2fTrqmGB3HPSkC-PjmVNUt0F9bMQT2-zhwRA/viewform" class="btn btn-outline-primary" target="_blank">会員登録</a>
             </div>
           </div>
         </div>
@@ -315,17 +383,92 @@
       </div>
 
       <h2 class="iearn-account">4, iEARNアカウントの作成</h2>
-      <p>
+        <p class="create-text1">
           こちらのページからiEARNアカウントを作成してください。
           <br>
-          →<a href="https://iearn.org/join">iEARNアカウント作成ページ</a>
+          →<a href="https://iearn.org/join" class="account-create">iEARNアカウント作成ページ</a>
           <br>
-          ※国際協働学習のプロジェクトの参加にはiEARNへの登録が必要です。必ずご登録をお済ませください。</p>
-      <p>
-          会費の振込み確認とアイアーンのアクティベイトが済みましたら、入会のご案内をジェイ アーン事務局より送らせていただきます。
-      </p>
-      <p>よくある質問/お問い合わせは<a href="faq.html">こちら</a>から
-  </main>
+          ※国際協働学習のプロジェクトの参加にはiEARNへの登録が必要です。必ずご登録をお済ませください。
+        </p>
+        <p class="create-text3">
+            会費の振込み確認とアイアーンのアクティベイトが済みましたら、入会のご案内をジェイ アーン事務局より送らせていただきます。
+        </p>
+      
+        <p class="create-text4">よくある質問/お問い合わせは<a href="faq.html">こちら</a>から
+        </p>
+
+    <div class="page-end">
+        <a href="#jearn-logo"><p>ページTopへ</p></a>
+    </div>
+</main>
+<footer class="footerwrap">
+    <!-- フッター -->
+    <div class="end">
+        <div class="footermenu">
+            <ul class="footernav2">
+                <li>
+                    <a href="../home.html">Home</a>
+                </li>
+                <br>
+                <li>
+                    <a href="../About/about.html">About us</a>
+                </li>
+                <br>
+                <li>
+                    <a href="../Study/study.html">国際協働学習</a>
+                </li>
+                <br>
+                <li>
+                    <a href="../Publication/publication.html">Publication</a>
+                </li>
+                <br>
+                <li>
+                    <a href="../Events/event-top.html">Events</a>  
+                </li>
+                <br>
+                <li>
+                    <a href="../Archive/symposium.html">Archive</a>
+                </li>
+                <br>
+                <li>
+                    <a href="../Joinus/joinus.html">Join us/FAQ</a>
+                </li>
+                <li>
+                    <a href="../privacy.html">&emsp;&emsp;プライバシーの考え方</a>
+                </li>
+            </ul>
+        </div>
+        <div class="SDGs">
+            <img src="../img/footer/SDGs-2.png" alt="SDGs">
+        </div>
+            <!--SNS icon-->
+        <div class="SNSicon">
+            <ul class="footernav">
+                <li class="twitter">
+                    <a href="https://twitter.com/iearnusa" target="_blank">
+                        <img src="../img/footer/icons8-twitter-50.png" alt="twitter">
+                    </a>
+                </li>
+                <li class="facebook">
+                    <a href="https://www.facebook.com/npojearn" target="_blank">
+                        <img src="../img/footer/icons8-app-50.png" alt="facebook">
+                </li>
+                <li class="youtube">
+                    <a href="https://www.youtube.com/channel/UC0OE6_SFYoUb1Ct1gzO7FYw" target="_blank">
+                        <img src="../img/footer/icons8-app-50 (1).png" alt="youtube">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+    <div class="copy">
+        <p class="copyright">
+            Copyright&copy;JEARN
+        </p>
+    </div>
+</footer>
 
 	<!-- Bootstrap JS -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

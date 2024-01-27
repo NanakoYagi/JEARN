@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="home.css">
     <!--Font Awesome-->
@@ -12,16 +14,28 @@
 </head>
 
 <body>
-    <!--ヘッダー-->
     <header>
         <div class="main-menu">
-            <div class="logo">
-                <a href="home.html">
-                    <img src="img/jearn-logo.png" alt="JEARN" id="jearn-logo">
-                </a>
+            <div class="header">
+                <div class="logo">
+                        <a href="home.html">
+                            <img src="img/jearn-logo.png" alt="JEARN" class="jearn-logo" id="jearn-logo">
+                        </a>
+                </div>
+                <div class="menu1">
+                    <a href="Joinus/joinus.html">
+                        <img src="img/header/icons8-パズルピース-50.png" alt="Join us" class="join-logo">
+                        <p class="">Join!</p>
+                    </a>
+                </div>    
+                <div class="menu2">
+                    <a href="https://translate.google.com/?hl=ja&sl=ja&tl=en&op=websites">
+                        <img src="img/header/icons8-globe-50.png" alt="Language" class="lang">
+                        <p class="add">Language</p>
+                    </a>
+                </div> 
             </div>
-
-            <!--ハンバーガーメニュー-->
+    <!--ハンバーガーメニュー-->
             <div class="hb-menu">
                 <!--三本線の表示-->
                 <input type="checkbox" id="hb-menu_check">
@@ -34,70 +48,83 @@
                     <ul class="hb-menu_list">
 
                         <li class="hb-menu_item">
-                            <div class="hb-menu_summary">Home</div>
-                            <ul class="hb-menu_details">
-                                <li class="hb-menu_link"><a href="home.html">Home</a></li>
-                            </ul>  
+                            <details>
+                                <summary class="hb-menu_summary">Home</summary>
+                                    <ul class="hb-menu_details">
+                                        <a class="hb-menu_summary" href="home.html">Home</a>
+                                    </ul>
+                            </details>
                         </li>
 
                         <li class="hb-menu_item">
-                            <div class="hb-menu_summary">About us</div>
-                                <ul class="hb-menu_details">
-                                    <li class="hb-menu_link"><a href="About/about.html">About JEARN</a></li>
-                                    <li class="hb-menu_link"><a href="About/rijicho.html">理事長挨拶</a></li>
-                                    <li class="hb-menu_link"><a href="About/iEARN.html">iEARN</a></li>
-                                </ul>
+                            <details>
+                                <summary class="hb-menu_summary">About us</summary>
+                                    <ul class="hb-menu_details">
+                                        <li class="hb-menu_link"><a href="About/about.html">About JEARN</a></li>
+                                        <li class="hb-menu_link"><a href="About/rijicho.html">理事長挨拶</a></li>
+                                        <li class="hb-menu_link"><a href="About/iEARN.html">iEARN</a></li>
+                                    </ul>
+                            </details>
                         </li>
 
                         <li class="hb-menu_item">
-                            <div class="hb-menu_summary">国際協働学習</div>
-                                <ul class="hb-menu_details">
-                                    <li class="hb-menu_link"><a href="Study/study.html">国際共同学習とは</a></li>
-                                    <li class="hb-menu_link"><a href="Study/project.html">プロジェクト</a></li>
-                                </ul>
+                            <details>
+                                <summary class="hb-menu_summary">国際協働学習</summary>
+                                    <ul class="hb-menu_details">
+                                        <li class="hb-menu_link"><a href="">国際協働学習とは</a></li>
+                                        <li class="hb-menu_link"><a href="">プロジェクト</a></li>
+                                    </ul>
+                            </details>
                         </li>
 
                         <li class="hb-menu_item">
-                            <div class="hb-menu_summary">Publication</div>
-                                <ul class="hb-menu_details">
-                                    <li class="hb-menu_link"><a href="Journal/journal.html">オンラインジャーナル</a></li>
-                                    <li class="hb-menu_link"><a href="Journal/paper.html">論文等</a></li>
-                                </ul>
+                            <details>
+                                <summary class="hb-menu_summary">Publication</summary>
+                                    <ul class="hb-menu_details">
+                                        <li class="hb-menu_link"><a href="">オンラインジャーナル</a></li>
+                                        <li class="hb-menu_link"><a href="">論文等</a></li>
+                                    </ul>
+                            </details>
                         </li>
 
                         <li class="hb-menu_item">
-                            <div class="hb-menu_summary">Events</div>
-                                <ul class="hb-menu_details">
-                                    <li class="hb-menu_link"><a href="Events/event-top.html">開催予定のイベント</a></li>
-                                </ul>
+                            <details>
+                                <summary class="hb-menu_summary">Events</summary>
+                                    <ul class="hb-menu_details">
+                                        <li class="hb-menu_link"><a href="">開催予定のイベント</a></li>
+                                    </ul>
+                            </details>
                         </li>
 
                         <li class="hb-menu_item">
-                            <div class="hb-menu_summary">Archives</div>
-                                <ul class="hb-menu_details">
-                                    <li class="hb-menu_link"><a href="Archive/symposium.html">シンポジウム</a></li>
-                                    <li class="hb-menu_link"><a href="Archive/lecture.html">講演会</a></li>
-                                    <li class="hb-menu_link"><a href="Archive/workshop.html">学習会</a></li>
-                                    <li class="hb-menu_link"><a href="Archive/article.hrml">記事・講演録</a></li>
-                                    <li class="hb-menu_link"><a href="Archive/previousproject.html">プロジェクト</a></li>
-                                </ul>
+                            <details>
+                                <summary class="hb-menu_summary">Archives</summary>
+                                    <ul class="hb-menu_details">
+                                        <li class="hb-menu_link"><a href="">シンポジウム</a></li>
+                                        <li class="hb-menu_link"><a href="">講演会</a></li>
+                                        <li class="hb-menu_link"><a href="">学習会</a></li>
+                                        <li class="hb-menu_link"><a href="">記事・講義録</a></li>
+                                        <li class="hb-menu_link"><a href="">プロジェクト</a></li>
+                                    </ul>
+                            </details>
                         </li>
 
                         <li class="hb-menu_item">
-                            <div class="hb-menu_summary">Join us! / FAQ</div>
-                                <ul class="hb-menu_details">
-                                    <li class="hb-menu_link"><a href="Joinus/joinus.html">加入方法</a></li>
-
-                                    <li class="hb-menu_link"><a href="Joinus/faq.html">FAQ</a></li>
-                                    <li class="hb-menu_link"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdlYnPmz2PLG7RJ-xQAqFJ7KKT9BsNmiGKWjkBV-ECuPpphXw/viewform" target="_blank">お問い合わせ</a></li>
-                                </ul>
+                            <details>
+                                <summary class="hb-menu_summary">Join us! FAQ</summary>
+                                    <ul class="hb-menu_details">
+                                        <li class="hb-menu_link"><a href="Joinus/joinus.html">加入方法</a></li>
+                                        <li class="hb-menu_link"><a href="">加入フォーム</a></li>
+                                        <li class="hb-menu_link"><a href="Joinus/faq.html">FAQ</a></li>
+                                        <li class="hb-menu_link"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdlYnPmz2PLG7RJ-xQAqFJ7KKT9BsNmiGKWjkBV-ECuPpphXw/viewform" target="_blanck">お問い合わせ</a></li>
+                                    </ul>
+                            </details>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
     </header>
-
 
     <!--メインコンテンツ-->
     <!--見出し-->
@@ -126,8 +153,8 @@
     <div class="content-bg-white">
         <h1 class="content-title">Our Key words</h1>
 
-        <div class="card-container">
-            <div class="card">
+        <div class="cards-container">
+            <div class="cards">
                 <i class="fa-solid fa-people-group fa-7x"></i>
                 <h3>国際協働学習</h3>
                 <p>グローバルネットワークを日本の教育現場に！</p>
@@ -135,14 +162,14 @@
                 <a href="https://www.jearn.jp/study.html" target="_blank" class="more">→more</a>
             </div>
 
-            <div class="card">
+            <div class="cards">
                 <i class="fa-solid fa-earth-americas fa-7x"></i>
                 <h3>プロジェクト</h3>
                 <p>世界中の人々と一緒に社会問題を解決！</p>
                 <a href="https://www.jearn.jp/iEARNproject.html" target="_blank" class="more">→more</a>
             </div>
 
-            <div class="card">
+            <div class="cards">
                 <i class="fa-solid fa-pen fa-7x"></i>
                 <h3>イベント</h3>
                 <p>国際交流に興味のある学生や教育者と交流！</p>
@@ -158,8 +185,8 @@
     <div class="content-bg-white">
         <h1 class="content-title">Partners</h1>
 
-        <div class="card-container">
-            <div class="card">
+        <div class="cards-container">
+            <div class="cards">
                 <a href="https://www.uchida.co.jp/" target="_blank">
                     <img src="img/uchida.png" alt="株式会社内田洋行">
                 </a>
@@ -167,7 +194,7 @@
                     <p>株式会社内田洋行</p>
                 </a>
             </div>
-            <div class="card">
+            <div class="cards">
                 <a href="https://www.tokyo-shoseki.co.jp/" target="_blank">
                     <img src="img/tokyoshoseki.png" alt="東京書籍株式会社">
                 </a>
@@ -176,8 +203,8 @@
                 </a>
             </div>
         </div>
-        <div class="card-container">
-            <div class="card">
+        <div class="cards-container">
+            <div class="cards">
                 <a href="https://www.aoyama.ac.jp/" target="_blank">
                     <img src="img/aogaku.png" alt="青山学院大学">
                 </a>
@@ -185,7 +212,7 @@
                     <p>青山学院大学</p>
                 </a>
             </div>
-            <div class="card">
+            <div class="cards">
                 <a href="https://www.jissen.ac.jp/" target="_blank">
                     <img src="img/jissenjoshi.png" alt="実践女子大学短期大学部">
                 </a>
@@ -203,8 +230,77 @@
         </div>
     </div>
 
-    <a class="return-top" href="#jearn-logo">ページTopへ</a>
-    <footer>
+    <div class="page-end">
+        <a href="#jearn-logo"><p>ページTopへ</p></a>
+    </div>
+</main>
+    <footer class="footerwrap">
+        <!-- フッター -->
+        <div class="end">
+            <div class="footermenu">
+                <ul class="footernav2">
+                    <li>
+                        <a href="home.html">Home</a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="About/about.html">About us</a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="Study/study.html">国際協働学習</a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="Publication/publication.html">Publication</a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="Events/event-top.html">Events</a>  
+                    </li>
+                    <br>
+                    <li>
+                        <a href="Archive/symposium.html">Archive</a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="Joinus/joinus.html">Join us/FAQ</a>
+                    </li>
+                    <li>
+                        <a href="privacy.html">&emsp;&emsp;プライバシーの考え方</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="SDGs">
+                <img src="img/footer/SDGs-2.png" alt="SDGs">
+            </div>
+                <!--SNS icon-->
+            <div class="SNSicon">
+                <ul class="footernav">
+                    <li class="twitter">
+                        <a href="https://twitter.com/iearnusa" target="_blank">
+                            <img src="img/footer/icons8-twitter-50.png" alt="twitter">
+                        </a>
+                    </li>
+                    <li class="facebook">
+                        <a href="https://www.facebook.com/npojearn" target="_blank">
+                            <img src="img/footer/icons8-app-50.png" alt="facebook">
+                    </li>
+                    <li class="youtube">
+                        <a href="https://www.youtube.com/channel/UC0OE6_SFYoUb1Ct1gzO7FYw" target="_blank">
+                            <img src="img/footer/icons8-app-50 (1).png" alt="youtube">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        </div>
+        <div class="copy">
+            <p class="copyright">
+                Copyright&copy;JEARN
+            </p>
+        </div>
     </footer>
 </body>
 </html>
