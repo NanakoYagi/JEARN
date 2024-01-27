@@ -5,7 +5,7 @@
 
 .iEARN-info {
     /* iEARNの説明文のcss */
-    padding: 10%;
+    /* padding: 10%; */
     line-height: 2;
 }
 
@@ -60,11 +60,6 @@
     transform: translate(0%, 10%);
 }
 
-/* ページTopへ戻るボタンのcss */
-.page-end a {
-    text-decoration: none;
-    color: #000;
-}
 
 /* レスポンシブデザイン */
 @media (max-width: 767px){
@@ -75,7 +70,7 @@
      .title {
         width: 100%;
         padding: 1%;
-    } 
+    }
     .page-title {
         width: 193%;
         padding: 1%;
@@ -83,7 +78,7 @@
     .cliché {
         width: 193%;
         padding: 1%;
-    } 
+    }
     .iEARN-Logo {
         width: 193%;
         padding: 1%;
@@ -117,10 +112,10 @@
         transform: translate(0%, 0%);
         width: 193%;
     }
-    .page-end {
+    /* .page-end {
         width: 193%;
         padding: 1%;
-    }
+    } */
     .end{
         width: 193%;
         background-color: #3b4fac;
