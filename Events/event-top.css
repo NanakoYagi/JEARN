@@ -1,0 +1,35 @@
+.fb_iframe_widget,
+.fb_iframe_widget span,
+.fb_iframe_widget iframe[style]{
+    width: 100% !important;
+}
+
+
+/* PCでは横幅500pxで表示 */
+.fb-wrap{
+    /* 以下2行は不要かも */
+    max-width: 500px;
+    width: 500px;
+    
+  }
+
+  .fb-page{
+    margin-left: 510px;
+  }
+  
+  p{
+    text-align: center;
+  }
+  /* 896px以下は横幅100%、中央寄せ*/
+  @media screen and (max-width: 896px) {
+   .fb-wrap{
+    width: 100%;
+    text-align: center !important;
+    margin: 0 auto !important;
+   }
+  .fb-page {
+    text-align: center !important;
+    margin: 0 auto !important;
+   }
+  }
+
