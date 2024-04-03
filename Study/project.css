@@ -1,0 +1,69 @@
+.keyvisual{
+  background-color:#DC9452 ;
+}
+
+.text1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 15%;
+    line-height: 2em;
+  }
+  
+  .gakusyu-icon{
+    text-align: center;
+  }
+  
+  .project-icon{
+    text-align: center;
+  }
+  
+  .card-title{
+    text-align: center;
+  }
+  
+  .card-text{
+    font-size: 100%;
+    width: 60%;
+    margin: auto;
+  }
+  
+  .card-more{
+    text-align: right;
+  }
+  
+  .card-title{
+    text-align: center;
+  }
+  
+  .heading2-text{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .page-end{
+    text-align: center;
+  }
+  
+  .card-group{
+    margin-bottom: 30px;
+  }
+  
+  .kome{
+    font-size: 85%;
+  }
+  
+  .text-body-secondary{
+    text-align: right;
+  }
+  
+  .card-text{
+    text-align: justify;
+  }
+
+.text-other{
+  text-align: center;
+}
+
+.girl-rising-movie{
+  margin: auto;
+}
