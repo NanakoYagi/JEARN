@@ -1,3 +1,22 @@
+.keyvisual {
+    background-color: red;
+    position: relative;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.sample {
+    height: 60px;
+    position: absolute;
+    background-color: white;
+    top: 100%;
+    z-index: 100;
+    width: 100%;
+    transform: translateY(-100%);
+    border-top-left-radius: 9999px;
+    border-top-right-radius: 9999px;
+}
+
 .main-content {
     max-width: 1045px;
     margin: 30px auto 60px;
