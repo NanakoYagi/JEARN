@@ -170,9 +170,16 @@ p{
 }
 
 .instruction{
+  text-align: center;
   margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .sosiki-block p{
   margin: 0%;
+}
+
+.white-iearn{ /*iEARNの画像の影が下のグレー部分に被るため余白を設ける*/
+  margin-bottom: 30px;
 }
