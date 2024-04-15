@@ -21,7 +21,6 @@
 
 
 /* ページTopへ戻るボタンのcss */
-.page-end a {
-    text-decoration: none;
-    color: #000;
+.page-end  {
+    text-align: center;
 }
