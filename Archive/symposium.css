@@ -1,0 +1,26 @@
+.subhead{
+    margin-bottom: 200px;
+}
+
+.year{
+    font-size: 32px;
+    margin-left: 120px;
+    display: inline-block;
+    font-weight: 400;
+}
+
+.line{
+    border-bottom: solid 1.5px; 
+}
+
+.archive .box {
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 100px;  
+}
+
+
+/* ページTopへ戻るボタンのcss */
+.page-end  {
+    text-align: center;
+}
