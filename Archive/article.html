@@ -9,7 +9,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         
     <link rel="stylesheet" href="../common.css">
-    <link rel="stylesheet" href="../Archive/archives.css">
+    <link rel="stylesheet" href="./archives.css">
     <title>終了したイベント‐記事・講演録 | JEARN</title>
 </head>
 
@@ -129,7 +129,138 @@
     <!--見出し-->
 
     <main>
+        <div class="keyvisual">
+            <nav class="nav1">
+                <ul class="nav2">
+                    <li>
+                        <a href="../home.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./symposium.html">Archives</a>
+                    </li>
+                    <li class="last">
+                        <a href="./article.html">終了したイベント ー記事・講演録</a>
+                    </li>
+                </ul>
+            </nav>
+            <h1>Archives</h1>
+        </div>
+        <div class="main-content">
+            <h1 class="page-title">記事・講演録</h1>
+            <div class="first-section-container">
+                <div class="button-group">
+                    <button data-year="2023" class="item-button">
+                        2023
+                    </button>
+                    <button data-year="2022" class="item-button">
+                        2022
+                    </button>
+                    <button data-year="2021" class="item-button">
+                        2021
+                    </button>
+                    <button data-year="2020" class="item-button">
+                        2020
+                    </button>
+                    <button data-year="other" class="item-button">
+                        2019以前
+                    </button>
+                </div>
+            </div>
 
+            <section class="paper-list">
+                <h2 class="published-year">
+                    2023
+                </h2>
+
+                <!-- 
+                    2023年度
+                -->
+
+                <div class="yearly-paper js-active" data-year="2023">
+                    <ul class="paper-info-container">
+                        <li class="published-date">
+                            2023
+                        </li>
+                        <li>
+                            <h3 class="paper-title">
+                                <a href="https://jearn.jp/news/gomi-on-earth-project/mottainai-workshop-2021.html" target="_blank">
+                                    GOMI in EARTH Project
+                                </a>
+                            </h3>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 
+                    2022年度
+                -->
+                <div class="yearly-paper" data-year="2022">
+                    <ul class="paper-info-container">
+                        <li class="published-date">
+                            2022
+                        </li>
+                        <li>
+                            <h3 class="paper-title">
+                                <a href="https://jearn.jp/article/jearn-20220818.html" target="_blank">
+                                    オンライン講演「日本私立小学校連合会全国教員夏季研修会 外国語部会」でアイアーンの講演機会をいただきました
+                                </a>
+                            </h3>
+                        </li>
+                    </ul>
+                    <ul class="paper-info-container">
+                        <li class="published-date">
+                            2022
+                        </li>
+                        <li>
+                            <h3 class="paper-title">
+                                <a href="https://jearn.jp/news/index.html#cresco-start" target="_blank">
+                                    英文「リアル・ボイス2023 No.1 ルーマニア」記事をジェイアーン公式Web発信
+                                </a>
+                            </h3>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 
+                    2021年度
+                -->
+                <div class="yearly-paper" data-year="2021">
+                    <ul class="paper-info-container">
+                        <li class="published-date">
+                            2021
+                        </li>
+                        <li>
+                            <h3 class="paper-title">
+                                <a href="http://www.otsukishoten.co.jp/book/b615436.html" target="_blank">
+                                    新連載「世界をつなぐ！教員ネットワーク通信」記事が、月刊クレスコ2023年1月号（大月書店）からスタート
+                                </a>
+                            </h3>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 
+                    2020年度
+                -->
+                <div class="yearly-paper" data-year="2020">
+                </div>
+
+
+                <!-- 
+                    2019年度
+                -->
+                <div class="yearly-paper" data-year="2019">
+                </div>
+
+
+                <!-- 
+                    2019年度以前
+                -->
+                <div class="yearly-paper" data-year="other">
+                </div>
+            </section>
+        </div>
+    
         <div class="page-end">
             <a href="#jearn-logo"><p>ページTopへ</p></a>
         </div>
@@ -208,5 +339,6 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous">
     </script>
+    <script src="./archives.js"></script>
 </body>
 </html>

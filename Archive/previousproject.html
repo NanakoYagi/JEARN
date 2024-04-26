@@ -9,7 +9,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         
     <link rel="stylesheet" href="../common.css">
-    <link rel="stylesheet" href="../Archive/archives.css">
+    <link rel="stylesheet" href="./archives.css">
     <title>終了したプロジェクト | JEARN</title>
 </head>
 
@@ -129,7 +129,126 @@
     <!--見出し-->
 
     <main>
+        <div class="keyvisual">
+            <nav class="nav1">
+                <ul class="nav2">
+                    <li>
+                        <a href="../home.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./symposium.html">Archives</a>
+                    </li>
+                    <li class="last">
+                        <a href="./article.html">終了したイベント　ー学習会</a>
+                    </li>
+                </ul>
+            </nav>
+            <h1>Archives</h1>
+        </div>
+        <div class="main-content">
+            <h1 class="page-title">終了したプロジェクト</h1>
+            <div class="first-section-container">
+                <div class="button-group">
+                    <button data-year="2023" class="item-button">
+                        2023
+                    </button>
+                    <button data-year="2022" class="item-button">
+                        2022
+                    </button>
+                    <button data-year="2021" class="item-button">
+                        2021
+                    </button>
+                    <button data-year="2020" class="item-button">
+                        2020
+                    </button>
+                    <button data-year="other" class="item-button">
+                        2019以前
+                    </button>
+                </div>
+            </div>
 
+            <section class="paper-list">
+                <h2 class="published-year">
+                    2023
+                </h2>
+
+                <!-- 
+                    2023年度
+                -->
+
+                <div class="yearly-paper js-active" data-year="2023">
+                </div>
+
+                <!-- 
+                    2022年度
+                -->
+                <div class="yearly-paper" data-year="2022">
+                    <ul class="paper-info-container">
+                        <li class="published-date">
+                            2022
+                        </li>
+                        <li>
+                            <h3 class="paper-title">
+                                <a href="https://ndys.jearn.jp/2022/soukatsu-j.html" target="_blank">
+                                    防災世界子ども会議 2022 in新潟
+                                </a>
+                            </h3>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 
+                    2021年度
+                -->
+                <div class="yearly-paper" data-year="2021">
+                </div>
+
+                <!-- 
+                    2020年度
+                -->
+                <div class="yearly-paper" data-year="2020">
+                    <ul class="paper-info-container">
+                        <li class="published-date">
+                            2020
+                        </li>
+                        <li>
+                            <h3 class="paper-title">
+                                <a href="https://ndys.jearn.jp/2020/index.html" target="_blank">
+                                    Natural Disaster Youth Summit 2020
+                                </a>
+                            </h3>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <!-- 
+                    2019年度
+                -->
+                <div class="yearly-paper" data-year="2019">
+                </div>
+
+
+                <!-- 
+                    2019年度以前
+                -->
+                <div class="yearly-paper" data-year="other">
+                    <ul class="paper-info-container">
+                        <li class="published-date">
+                            1988~2005
+                        </li>
+                        <li>
+                            <h3 class="paper-title">
+                                <a href="https://cmsugimoto.jp/wakoku/project/tv_kaigi/tv_kaigi.html#dsp" target="_blank">
+                                    Dream School Project
+                                </a>
+                            </h3>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    
         <div class="page-end">
             <a href="#jearn-logo"><p>ページTopへ</p></a>
         </div>
@@ -208,5 +327,6 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous">
     </script>
+    <script src="./archives.js"></script>
 </body>
 </html>
