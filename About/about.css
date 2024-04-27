@@ -183,3 +183,7 @@ p{
 .white-iearn{ /*iEARNの画像の影が下のグレー部分に被るため余白を設ける*/
   margin-bottom: 30px;
 }
+
+.to-onlinejournal{
+  font-size: 70%;
+}
