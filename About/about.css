@@ -128,9 +128,8 @@
   
 }
 /* ページTopへ戻るボタンのcss */
-.page-end a {
-    text-decoration: none;
-    color: #000;
+.page-end  {
+  text-align: center;
 }
 
 .about-menu{
@@ -182,4 +181,8 @@ p{
 
 .white-iearn{ /*iEARNの画像の影が下のグレー部分に被るため余白を設ける*/
   margin-bottom: 30px;
+}
+
+.to-onlinejournal{
+  font-size: 70%;
 }
