@@ -2,10 +2,15 @@
   background-color:#DC9452 ;
 }
 
+h2{
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
 .text1{
     margin-top: 30px;
     margin-bottom: 30px;
-    margin-left: 15%;
+    margin-left: 24%;
     line-height: 2em;
   }
   
@@ -37,8 +42,8 @@
   
   .heading2-text{
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 0px;
+    margin-bottom: 40px;
   }
   .page-end{
     text-align: center;
@@ -66,4 +71,28 @@
 
 .girl-rising-movie{
   margin: auto;
+}
+
+/* リンクの基本スタイル */
+.text-other a {
+  color: #0A2397; /* 青系のカラー */
+  text-decoration: none; /* テキスト装飾なし */
+  position: relative; /* 擬似要素を使うために必要 */
+  transition: all 0.3s ease; /* 滑らかなトランジション */
+}
+
+/* 擬似要素を使ってチェックマークを追加 */
+.text-other a::after {
+  content: '✔'; /* チェックマーク */
+  position: absolute; /* 絶対配置 */
+  opacity: 0; /* 初期状態では非表示 */
+  right: -15px; /* 右側に配置 */
+  transition: all 0.3s ease; /* トランジションで滑らかに表示 */
+}
+
+/* ホバー時にチェックマークを表示 */
+.text-other a:hover::after {
+  opacity: 1; /* ホバー時にチェックマークを表示 */
+  transform: translateX(5px); /* 若干右へ移動 */
+  color: green; /* チェックマークの色 */
 }
