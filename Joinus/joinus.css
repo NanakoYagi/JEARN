@@ -1,27 +1,6 @@
 /* 基本スタイル */
-.card1 {
-    border: 1px solid #ddd; /* 境界線 */
-    border-radius: 10px; /* 角の丸み */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* 軽いシャドウ */
-    transition: all 0.3s ease; /* トランジション */
-}
-
-/* ホバー効果 */
-.card1:hover {
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* ホバー時のシャドウ強化 */
-    transform: translateY(-5px); /* 上に少し移動 */
-}
-
-/* カード内のアイコン */
-.icon {
-    width: 100px; /* アイコンのサイズ */
-    height: 100px;
-    margin: 10px; /* アイコンの余白 */
-    border-radius: 50%; /* 丸みを付ける */
-    background-color: #f0f0f0; /* 背景色 */
-    display: flex; /* 中央寄せ */
-    justify-content: center;
-    align-items: center;
+.card1{
+    border: none;
 }
 
 .keyvisual{
@@ -43,10 +22,10 @@
 
 
 
-.iearn-logo{
-    max-width: 90%;
+/* .iearn-logo{
+    max-width: 100%;
     height: auto;
-}
+} */
 
 .iearn-text{
     transform: translate(0, 55px);
