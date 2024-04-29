@@ -1,7 +1,7 @@
-.subhead{
-    margin-bottom: 200px;
-}
+.box{
+    text-align: left;
 
+}
 .year{
     font-size: 32px;
     margin-left: 120px;
@@ -14,9 +14,10 @@
 }
 
 .archive .box {
-    text-align: center;
-    margin-top: 90px;
-    margin-bottom: 100px;  
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 100px; 
+    margin-left: 120px; 
 }
 
 
