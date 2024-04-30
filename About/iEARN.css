@@ -21,6 +21,19 @@
     justify-content: center;
 }
 
+.cliche{
+        font-family: "Amatic SC", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 64px;
+}
+
+h2{
+    font-family: "Bad Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
 /* 以下それぞれのアイコンについてのcss */
 .country-icon {
     padding: 5%;
