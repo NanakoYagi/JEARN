@@ -7,11 +7,17 @@ h2{
   margin-bottom: 50px;
 }
 
+.slogan{
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 64px;
+}
+
+
 .text1{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 24%;
-    line-height: 2em;
+  margin-top: 30px;
+  text-align: center;
   }
   
   .gakusyu-icon{
