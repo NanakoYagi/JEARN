@@ -3,6 +3,29 @@
     border: none;
 }
 
+/* 通常のカードスタイル */
+.card1 {
+    transition: 0.3s; /* ホバー時のアニメーション */
+  }
+  
+  /* ホバー時のスタイル */
+  .card1:hover {
+    background-color: #f0f0f0; /* 背景色の変化 */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* 影を追加 */
+    transform: translateY(-5px); /* カードが少し浮く */
+  }
+  
+  /* カードの画像のスタイル */
+  .card1 .card-img-top {
+    transition: 0.3s; /* 画像のアニメーション */
+  }
+  
+  /* ホバー時の画像スタイル */
+  .card1:hover .card-img-top {
+    transform: scale(1.05); /* 画像が少し拡大する */
+  }
+
+  
 .keyvisual{
     background-color:#3BACAC ;
 }
