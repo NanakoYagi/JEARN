@@ -7,6 +7,15 @@
     line-height: 2em;
 }
 
+.keyvisual{
+    background-color: #DC5A52;
+
+}
+
+.publicher{
+    font-size: 80%;
+}
+
 .photo1 {
     display: flex;/*画像を横並びにする*/
     margin-top: 100px;
