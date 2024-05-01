@@ -65,11 +65,6 @@ p {
     font-weight: 400;
     text-align:justify
 }
-.main-menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
 
 /* --------------------------------------------- */
 /* 背景色の設定 */
@@ -103,47 +98,64 @@ p {
     border-bottom-right-radius: 1000px 200px;
     border-bottom-left-radius: 1000px 200px;
 }
-.logo {
-    width: 60%;
-    max-width: 60%;
-}
+
 .header{
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
-    padding: 0 5% 0 5%;
+    padding-left: 50px;
+    height: 125px;
 } 
+
+.logo {
+    width: fit-content;
+}
+
+.global-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+    max-width: 40%;
+    height: 100%;
+}
+
+.jearn-logo {
+    width: 100%;
+}
+
+.menu1, .menu2 { 
+    border-right: 2px solid black;   
+    width: 33%;
+    min-width: 100px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 .menu1 {
-    /* 縦線のcss */
-    /* border-left: #000 1px solid;*/
-    padding-top: 3%;
-    padding-left: 20%;
-    padding-right: 3%;
-    transform: translate(10%, 0%); 
-    width: 10%; 
+    border-left: 2px solid black;  
 }
-.menu2 {
-    /* 縦線のcss */
-    /* border-left: #000 1px solid;
-    border-right: #000 1px solid; */
-    padding-top: 3%;
-    padding-left: 15%;
-    padding-right: 1%;
-    transform: translate(10%, 0%);
-    width: 10%;
+
+.puzzle-icon-area, .globe-icon-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    width: fit-content;
+    margin: 0 auto;
 }
-.add {
-    /* altのcss */
-    transform: translate(-100%, 0%);
+
+.icon-text {
+    margin-bottom: 0;
 }
-.lang {
-    /* 言語のcss */
-    transform: translate(40%, 0%);
-} 
 
 .hb-menu {
-    width: 10%;
+    width: 33%;
+    position: relative;
+    height: 100%;
+    min-width: 100px;
 }
 
 /* --------------------------------------------- */
@@ -271,20 +283,20 @@ p {
 /* 参照：https://mik2062.jp/hamburger-css/　の「スマホ用メニューの作成」 */
 .hb-menu_box {
     /*位置の設定*/
-    position: fixed;
-    top: 0;
-    right: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
     /* 中の要素を上下中央寄せ */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     /* サイズ指定 */
-    height: 113px;
-    width: 113px;
+    height: 57px;
+    width: 57px;
     /* 最前面にする */
     z-index: 100;
-    background-color: #ffffff;
 }
 /* メニューの白線を疑似要素を使って3本作成 */
 .hb-menu_box span,         /* 真ん中の線 */
