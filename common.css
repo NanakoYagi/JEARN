@@ -399,13 +399,35 @@ p {
     font-size: 12px;
 }
 
-@media screen and (max-width: 700px) {
-    .jearn-logo {
-        width: 100%;
-        max-width: 100%;
+@media screen and (max-width: 900px) {
+    .header {
+        padding-left: 10px;
+        height: auto;
     }
-    .join-logo{
-        width: 50%;
-        padding-left: 0%;
+
+    .global-nav {
+        max-width: none;
+        justify-content: flex-end;
+    }
+
+    .menu1, .menu2, .hb-menu {
+        width: 60px;
+        min-width: 0px;
+    }
+    
+    .icon-text {
+        font-size: 12px;
+    }
+
+    .hb-menu_box {
+        width: 50px;
+        height: 50px;
+    }
+
+    .hb-menu_box span,  
+    .hb-menu_box span:before, 
+    .hb-menu_box span:after {
+        width: 50px;
+        height: 5px;
     }
 }
