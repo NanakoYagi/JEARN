@@ -87,3 +87,19 @@ h3 {
     padding: 0 20px 0 20px;
 }
 
+@media screen and (max-width: 900px) {
+    .content-bg-white-top {
+        /* flex-direction: column; */
+    }
+
+    .top-visual {
+        width: 50%;
+    }
+
+    .top-title {
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+    }
+
+}
