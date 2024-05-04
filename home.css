@@ -16,12 +16,12 @@
     display: flex;
 }
 .top-img {
-    width: 692px;
-    height: 430px;
+    width: 100%;
 }
 .top-img-bg {
-    width: 692px;
-    height: 581px;
+    width: 100%;
+    max-width: 692px;
+    max-height: 581px;
     background-color: #3B4FAC;
     display: flex;
     align-items: center;
