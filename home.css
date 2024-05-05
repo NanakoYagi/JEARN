@@ -71,6 +71,14 @@
     width: 50%;
     margin: 0 50px 0 50px;
 }
+.image-box {
+    display: block;
+    min-width: min-content;
+    width: 100%;
+}
+.image {
+    width: 100%;
+}
 
 /* GDSCのロゴ*/
 .GDSC-logo {
