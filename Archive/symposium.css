@@ -1,0 +1,31 @@
+.keyvisual {
+    background-color: #813BAC;
+}
+
+.box{
+    text-align: left;
+
+}
+.year{
+    font-size: 32px;
+    margin-left: 120px;
+    display: inline-block;
+    font-weight: 400;
+}
+
+.line{
+    border-bottom: solid 1.5px; 
+}
+
+.archive .box {
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 100px; 
+    margin-left: 120px; 
+}
+
+
+/* ページTopへ戻るボタンのcss */
+.page-end  {
+    text-align: center;
+}

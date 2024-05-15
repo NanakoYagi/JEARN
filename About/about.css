@@ -1,3 +1,9 @@
+h2{
+  font-family: "Bad Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /*背景がグレーの部分のcss*/
 .gray{
   background-color: #E0DCDC;
@@ -128,9 +134,8 @@
   
 }
 /* ページTopへ戻るボタンのcss */
-.page-end a {
-    text-decoration: none;
-    color: #000;
+.page-end  {
+  text-align: center;
 }
 
 .about-menu{
@@ -170,9 +175,20 @@ p{
 }
 
 .instruction{
+  text-align: center;
   margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .sosiki-block p{
   margin: 0%;
+}
+
+.white-iearn{ /*iEARNの画像の影が下のグレー部分に被るため余白を設ける*/
+  margin-bottom: 30px;
+}
+
+.to-onlinejournal{
+  font-size: 70%;
 }

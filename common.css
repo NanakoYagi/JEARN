@@ -2,12 +2,36 @@
 /*  ヘッダー、フッダー、文字色、背景、フォント関連
 /* --------------------------------------------- */
 /* 文字の設定 */
-@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap'); */
 
+html{
+    font-family: "Andika", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.join{
+    font-family: "Bad Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.add{
+    font-family: "Bad Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
 
 .container-fluid{
     text-align: left;
+}
+
+.keyvisual h1{
+    font-family: "Bad Script", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /*リンクの変色の設定*/
@@ -25,6 +49,19 @@ a:hover {
     text-decoration: underline;
 }
 
+.slogan{
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 64px; 
+    margin-left: 100px;
+}
+
+.page-title{
+    font-family: "Bad Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
 
 /* ページTopへ戻るボタンのcss */
 .page-end a {
@@ -34,7 +71,7 @@ a:hover {
 
 body {
     font-family: 'Zen Kaku Gothic New', sans-serif;
-    margin: 0 auto;
+    margin: 0;
 }
 h1 {
     font-size: 36px;
@@ -397,6 +434,7 @@ p {
 
 .copyright{
     font-size: 12px;
+    text-align: center;
 }
 
 @media screen and (max-width: 900px) {

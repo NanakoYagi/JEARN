@@ -1,16 +1,54 @@
+/* 基本スタイル */
+.card1{
+    border: none;
+}
+
+/* 通常のカードスタイル */
+.card1 {
+    transition: 0.3s; /* ホバー時のアニメーション */
+  }
+  
+  /* ホバー時のスタイル */
+  .card1:hover {
+    background-color: #f0f0f0; /* 背景色の変化 */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* 影を追加 */
+    transform: translateY(-5px); /* カードが少し浮く */
+  }
+  
+  /* カードの画像のスタイル */
+  .card1 .card-img-top {
+    transition: 0.3s; /* 画像のアニメーション */
+  }
+  
+  /* ホバー時の画像スタイル */
+  .card1:hover .card-img-top {
+    transform: scale(1.05); /* 画像が少し拡大する */
+  }
+
+  
 .keyvisual{
     background-color:#3BACAC ;
 }
-.arrow-icon{
-    width: 5%;
-    height: 100%;
-    margin-right: 100%;
+
+.arrow-icon {
+    display: flex; /* フレキシブルボックスモデルを使用 */
+    justify-content: center; /* 水平中央寄せ */
+    align-items: flex-start; /* 上部寄せ */
+    width: 50px; /* アイコンの幅 */
+    height: 50px; /* アイコンの高さ */
 }
 
-.iearn-logo{
-    max-width: 90%;
-    height: auto;
+.arrow-icon img {
+    margin-top: 15px; /* 画像の上部に余白を追加 */
 }
+
+
+
+
+/* .iearn-logo{
+    max-width: 100%;
+    height: auto;
+} */
 
 .iearn-text{
     transform: translate(0, 55px);
@@ -18,13 +56,16 @@
 
 
 p{
-    /* font-size: 16px; */
+    /* font-size: 16px;
     font-weight: 500;
-    margin-bottom: 0;
+    margin-bottom: 0; */
+    margin-top: 30px;
+    margin-left: 15%;
+    line-height: 2em;
 }
 
 h2{
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
 /*表のスタイル*/
@@ -77,14 +118,6 @@ th, td{
 }
 
 
-.iearn-account{
-    text-align: left;
-}
-
-.gakusyu-icon{
-    text-align: center;
-}
-
 .accordion-button{
     font-weight: bold;
 }
@@ -93,15 +126,34 @@ th, td{
     font-weight: bold;
 }
 
-.create-text2{
-    margin-top: 1px;
+
+/* カードの基本スタイル */
+.card1 {
+    border: 1px solid #ddd; /* 境界線 */
+    border-radius: 10px; /* 角の丸み */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* 軽いシャドウ */
+    transition: all 0.3s ease; /* トランジションの滑らかさ */
 }
 
-.create-text3{
-    margin-top: 20px;
+/* 画像部分の調整 */
+.card-img-top {
+    max-width: 50%; /* 幅を縮小 */
+    height: auto; /* 高さは自動調整 */
+    margin: 0 auto; /* 中央寄せ */
+    display: block; /* ブロック要素として扱う */
+    padding: 10px; /* 余白を追加 */
+    object-fit: contain; /* 縦横比を維持しつつ縮小 */
 }
 
-.create-text4{
-    margin-top: 20px;
-    margin-bottom: 30px;
+/* カード内のテキスト部分 */
+.card-body {
+    text-align: center; /* テキストを中央寄せ */
 }
+
+.kome{
+    font-size: 85%;
+}
+
+.page-end{
+    text-align: center;
+  }
