@@ -430,4 +430,28 @@ p {
         width: 50px;
         height: 5px;
     }
+
+    .end {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row^gap: 30px;
+    }
+
+    .footermenu {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .SDGs {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .SNSicon {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 }
