@@ -418,11 +418,12 @@ p {
 .hb-menu_details {
     display: flex;
     color: #FFFFFF;
+    flex-direction: column;
+    row-gap: 10px;
 }
 .hb-menu_link {
     font-size: 32px;
     list-style: none;
-    padding: 20px 35px 0 0;
 }
 .hb-menu_link a {
     color: #FFFFFF;
