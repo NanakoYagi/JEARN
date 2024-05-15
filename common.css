@@ -394,6 +394,9 @@ p {
 /* ハンバーガーメニューのチェックボックスがONの時だけ左端に展開する */
 #hb-menu_check:checked ~ .hb-menu_content {
   left: 0;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
 }
 
 /* メニュー項目全体の設定 */
