@@ -205,16 +205,21 @@ p {
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
+    align-items: center;
     min-width: 65%;
+    column-gap: 10%;
+    row-gap: 20px;
+    padding-top: 20px;
 }
 .footernav li {
     display: inline;
-    font-size: 11px;
+    font-size: 16px;
     line-height: 1.75;
+
 }
 .footernav2 li {
     display: inline;
-    font-size: 11px;
+    font-size: 16px;
     line-height: 1.75;
 }
 
@@ -230,13 +235,10 @@ p {
     text-align: left;
     font-size: 16px;
 }
-/* .footernav {
-    position: relative;
-    margin-top: 30px;
-    margin-left: 30px;
-    width: 30%;
-    display: flex;
-} */
+.footernav {
+    margin: 0;
+    padding: 0;
+}
 .address {
     position: relative;
     padding: 10px;
@@ -247,12 +249,7 @@ p {
     text-decoration: none;
 }
 .SDGs {
-    margin-top: 2%;
-    /* transform: translate(-130px); */
-    padding-right: 25%;
-    /* padding: 10px; */
-    /* padding-top: 5%;
-    padding-left: 5%; */
+    width: 40%;
 }
 .SDGs a {
     color: #FFFFFF;
@@ -260,17 +257,20 @@ p {
 }
 .footermenu {
     position: relative;
-    /* padding: 10px; */
     width: 40%;
+    display: flex;
+    justify-content: right;
+}
+.footernav2 {
+    margin: 0;
+    padding: 0;
+    width: fit-content;
 }
 .footernav2 a{
     color: #FFFFFF;
      text-decoration: none;
 }
 
-.SNSicon {
-    margin-top: 8%;
-}
 .pry a {
     color: #FFFFFF;
 }
