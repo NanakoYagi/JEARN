@@ -28,12 +28,12 @@ h3{
     display: flex;
 }
 .top-img {
-    width: 692px;
-    height: 430px;
+    width: 100%;
 }
 .top-img-bg {
-    width: 692px;
-    height: 581px;
+    width: 100%;
+    max-width: 692px;
+    max-height: 581px;
     background-color: #3B4FAC;
     display: flex;
     align-items: center;
@@ -86,8 +86,23 @@ h3{
 }
 .cards { /* カード間の空白の設定 */
     text-align: center;
-    width: 50%;
     margin: 0 50px 0 50px;
+    width: 50%;
+}
+.f-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 50px 0 50px;
+}
+.image-box {
+    display: block;
+    min-width: min-content;
+    width: 100%;
+}
+.image {
+    width: 100%;
 }
 
 /* GDSCのロゴ*/
@@ -109,9 +124,41 @@ h3 {
     text-align: center;
 }
 
-@media screen and (max-width: 768px) {
-    .content-bg-white-top{
-        display: block;
-        margin-left: 0px;
+@media screen and (max-width: 900px) {
+    .content-bg-white-top {
+        /* flex-direction: column; */
+    }
+
+    .top-visual {
+        width: 50%;
+    }
+
+    .top-title {
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .content-inner {
+        padding: 0 5px;
+    }
+
+    .column-cards {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 15px;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 0px 15px;
+    }
+
+    .cards {
+        margin: 0;
+        width: 100%;
+        max-width: 600px;
     }
 }

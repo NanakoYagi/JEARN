@@ -102,11 +102,6 @@ p {
     font-weight: 400;
     text-align:justify
 }
-.main-menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
 
 /* --------------------------------------------- */
 /* 背景色の設定 */
@@ -140,47 +135,64 @@ p {
     border-bottom-right-radius: 1000px 200px;
     border-bottom-left-radius: 1000px 200px;
 }
-.logo {
-    width: 60%;
-    max-width: 60%;
-}
+
 .header{
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
-    padding: 0 5% 0 5%;
+    padding-left: 50px;
+    height: 125px;
 } 
+
+.logo {
+    width: fit-content;
+}
+
+.global-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+    max-width: 40%;
+    height: 100%;
+}
+
+.jearn-logo {
+    width: 100%;
+}
+
+.menu1, .menu2 { 
+    border-right: 2px solid black;   
+    width: 33%;
+    min-width: 100px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 .menu1 {
-    /* 縦線のcss */
-    /* border-left: #000 1px solid;*/
-    padding-top: 3%;
-    padding-left: 20%;
-    padding-right: 3%;
-    transform: translate(10%, 0%); 
-    width: 10%; 
+    border-left: 2px solid black;  
 }
-.menu2 {
-    /* 縦線のcss */
-    /* border-left: #000 1px solid;
-    border-right: #000 1px solid; */
-    padding-top: 3%;
-    padding-left: 15%;
-    padding-right: 1%;
-    transform: translate(10%, 0%);
-    width: 10%;
+
+.puzzle-icon-area, .globe-icon-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    width: fit-content;
+    margin: 0 auto;
 }
-.add {
-    /* altのcss */
-    transform: translate(-100%, 0%);
+
+.icon-text {
+    margin-bottom: 0;
 }
-.lang {
-    /* 言語のcss */
-    transform: translate(40%, 0%);
-} 
 
 .hb-menu {
-    width: 10%;
+    width: 33%;
+    position: relative;
+    height: 100%;
+    min-width: 100px;
 }
 
 /* --------------------------------------------- */
@@ -230,16 +242,21 @@ p {
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
+    align-items: center;
     min-width: 65%;
+    column-gap: 10%;
+    row-gap: 20px;
+    padding-top: 20px;
 }
 .footernav li {
     display: inline;
-    font-size: 11px;
+    font-size: 16px;
     line-height: 1.75;
+
 }
 .footernav2 li {
     display: inline;
-    font-size: 11px;
+    font-size: 16px;
     line-height: 1.75;
 }
 
@@ -255,13 +272,10 @@ p {
     text-align: left;
     font-size: 16px;
 }
-/* .footernav {
-    position: relative;
-    margin-top: 30px;
-    margin-left: 30px;
-    width: 30%;
-    display: flex;
-} */
+.footernav {
+    margin: 0;
+    padding: 0;
+}
 .address {
     position: relative;
     padding: 10px;
@@ -272,12 +286,7 @@ p {
     text-decoration: none;
 }
 .SDGs {
-    margin-top: 2%;
-    /* transform: translate(-130px); */
-    padding-right: 25%;
-    /* padding: 10px; */
-    /* padding-top: 5%;
-    padding-left: 5%; */
+    width: 40%;
 }
 .SDGs a {
     color: #FFFFFF;
@@ -285,17 +294,20 @@ p {
 }
 .footermenu {
     position: relative;
-    /* padding: 10px; */
     width: 40%;
+    display: flex;
+    justify-content: right;
+}
+.footernav2 {
+    margin: 0;
+    padding: 0;
+    width: fit-content;
 }
 .footernav2 a{
     color: #FFFFFF;
      text-decoration: none;
 }
 
-.SNSicon {
-    margin-top: 8%;
-}
 .pry a {
     color: #FFFFFF;
 }
@@ -308,20 +320,20 @@ p {
 /* 参照：https://mik2062.jp/hamburger-css/　の「スマホ用メニューの作成」 */
 .hb-menu_box {
     /*位置の設定*/
-    position: fixed;
-    top: 0;
-    right: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
     /* 中の要素を上下中央寄せ */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     /* サイズ指定 */
-    height: 113px;
-    width: 113px;
+    height: 57px;
+    width: 57px;
     /* 最前面にする */
     z-index: 100;
-    background-color: #ffffff;
 }
 /* メニューの白線を疑似要素を使って3本作成 */
 .hb-menu_box span,         /* 真ん中の線 */
@@ -382,6 +394,9 @@ p {
 /* ハンバーガーメニューのチェックボックスがONの時だけ左端に展開する */
 #hb-menu_check:checked ~ .hb-menu_content {
   left: 0;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
 }
 
 /* メニュー項目全体の設定 */
@@ -403,11 +418,12 @@ p {
 .hb-menu_details {
     display: flex;
     color: #FFFFFF;
+    flex-direction: column;
+    row-gap: 10px;
 }
 .hb-menu_link {
     font-size: 32px;
     list-style: none;
-    padding: 20px 35px 0 0;
 }
 .hb-menu_link a {
     color: #FFFFFF;
@@ -425,13 +441,59 @@ p {
     text-align: center;
 }
 
-@media screen and (max-width: 700px) {
-    .jearn-logo {
-        width: 100%;
-        max-width: 100%;
+@media screen and (max-width: 900px) {
+    .header {
+        padding-left: 10px;
+        height: auto;
     }
-    .join-logo{
-        width: 50%;
-        padding-left: 0%;
+
+    .global-nav {
+        max-width: none;
+        justify-content: flex-end;
+    }
+
+    .menu1, .menu2, .hb-menu {
+        width: 60px;
+        min-width: 0px;
+    }
+    
+    .icon-text {
+        font-size: 12px;
+    }
+
+    .hb-menu_box {
+        width: 50px;
+        height: 50px;
+    }
+
+    .hb-menu_box span,  
+    .hb-menu_box span:before, 
+    .hb-menu_box span:after {
+        width: 50px;
+        height: 5px;
+    }
+
+    .end {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row^gap: 30px;
+    }
+
+    .footermenu {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .SDGs {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .SNSicon {
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 }
