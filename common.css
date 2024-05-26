@@ -13,13 +13,13 @@ html{
 }
 
 .join{
-    font-family: "Bad Script", cursive;
+    font-family: "Andika", cursive;
     font-weight: 400;
     font-style: normal;
 }
 
 .add{
-    font-family: "Bad Script", cursive;
+    font-family: "Andika", cursive;
     font-weight: 400;
     font-style: normal;
 }
@@ -29,7 +29,7 @@ html{
 }
 
 .keyvisual h1{
-    font-family: "Bad Script", cursive;
+    font-family: "Andika", cursive;
     font-weight: 400;
     font-style: normal;
 }
@@ -58,7 +58,7 @@ a:hover {
 }
 
 .page-title{
-    font-family: "Bad Script", cursive;
+    font-family: "Andika", cursive;
     font-weight: 400;
     font-style: normal;
 }
@@ -107,12 +107,12 @@ p {
 /* 背景色の設定 */
 .content-bg-white {
     background-color: #FFFFFF;
-    border-bottom: 1px solid #000000;
+    /* border-bottom: 1px solid #000000; */
     padding: 20px 0 20px 0;
 }
 .content-bg-gray { /* 背景色がグレーなところはabout.htmlにしかないから、個別にしてもいいかもしれない */
     background-color: #E0DCDC;
-    border-bottom: 1px solid #000000;
+    /* border-bottom: 1px solid #000000; */
     padding: 20px 0 20px 0;
 }
 
@@ -162,7 +162,7 @@ p {
 }
 
 .menu1, .menu2 { 
-    border-right: 2px solid black;   
+    /* border-right: 2px solid black;    */
     width: 33%;
     min-width: 100px;
     height: 100%;
@@ -172,7 +172,7 @@ p {
 }
 
 .menu1 {
-    border-left: 2px solid black;  
+    /* border-left: 2px solid black;   */
 }
 
 .puzzle-icon-area, .globe-icon-area {
@@ -430,6 +430,7 @@ p {
 }
 
 
+
 /* 「ページTopへ」の設定 */
 .return-top {
     font-size: 24px;
@@ -477,7 +478,7 @@ p {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        row^gap: 30px;
+        row-gap: 30px;
     }
 
     .footermenu {
