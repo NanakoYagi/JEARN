@@ -1,5 +1,5 @@
 h2{
-  font-family: "Bad Script", cursive;
+  font-family: "Andika", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -191,4 +191,24 @@ p{
 
 .to-onlinejournal{
   font-size: 70%;
+}
+
+/*カード（Our Key words）の設定*/
+.cards-container { /* カードを横に並べる */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.cards { /* カード間の空白の設定 */
+  text-align: center;
+  margin: 0 50px 0 50px;
+  width: 100%;
+}
+.f-cards {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  text-align: center;
+  margin: auto;
 }
