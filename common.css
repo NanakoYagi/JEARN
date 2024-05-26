@@ -19,7 +19,7 @@ html{
 }
 
 .add{
-    font-family: "Andika", cursive;
+    font-family: "Andika", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -29,7 +29,7 @@ html{
 }
 
 .keyvisual h1{
-    font-family: "Andika", cursive;
+    font-family: "Andika", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -58,7 +58,7 @@ a:hover {
 }
 
 .page-title{
-    font-family: "Andika", cursive;
+    font-family: "Andika", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
