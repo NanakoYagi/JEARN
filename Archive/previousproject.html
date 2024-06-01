@@ -21,108 +21,116 @@
         <div class="main-menu">
             <div class="header">
                 <div class="logo">
-                        <a href="../home.html">
-                            <img src="../img/jearn-logo.png" alt="JEARN" class="jearn-logo" id="jearn-logo">
-                        </a>
+                    <a href="../home.html">
+                        <picture>
+                            <source media="(max-width: 500px)" srcset="../img/jearn-logo-w140.png">
+                            <source media="(max-width: 900px)" srcset="../img/jearn-logo-w300.png">
+                            <img src="../img/jearn-info-1.png" width="280" alt="JEARN" class="jearn-logo" id="jearn-logo">
+                        </picture>
+                    </a>
                 </div>
-                <div class="menu1">
-                    <a href="../Joinus/joinus.html">
-                        <img src="../img/header/icons8-パズルピース-50.png" alt="Join us" class="join-logo">
-                        <p class="join">Join!</p>
-                    </a>
-                </div>    
-                <div class="menu2">
-                    <a href="https://translate.google.com/?hl=ja&sl=ja&tl=en&op=websites">
-                        <img src="../img/header/icons8-globe-50.png" alt="Language" class="lang">
-                        <p class="add">AI Translation</p>
-                    </a>
-                </div> 
-            </div>
-            <!--ハンバーガーメニュー-->
-            <div class="hb-menu">
-                <!--三本線の表示-->
-                <input type="checkbox" id="hb-menu_check">
-                <label for="hb-menu_check" class="hb-menu_box">
-                    <span></span>
-                </label>
-
-                <!--メニューの内容-->
-                <div class="hb-menu_content">
-                    <ul class="hb-menu_list">
-
-                        <li class="hb-menu_item">
-                            <details>
-                                <summary class="hb-menu_summary">Home</summary>
-                                    <ul class="hb-menu_details">
-                                        <a class="hb-menu_summary" href="../home.html">Home</a>
-                                    </ul>
-                            </details>
-                        </li>
-
-                        <li class="hb-menu_item">
-                            <details>
-                                <summary class="hb-menu_summary">About us</summary>
-                                    <ul class="hb-menu_details">
-                                        <li class="hb-menu_link"><a href="../About/about.html">About JEARN</a></li>
-                                        <li class="hb-menu_link"><a href="../About/rijicho.html">理事長あいさつ</a></li>
-                                        <li class="hb-menu_link"><a href="../About/iEARN.html">iEARN</a></li>
-                                    </ul>
-                            </details>
-                        </li>
-
-                        <li class="hb-menu_item">
-                            <details>
-                                <summary class="hb-menu_summary">国際協働学習</summary>
-                                    <ul class="hb-menu_details">
-                                        <li class="hb-menu_link"><a href="../Study/study.html">国際協働学習とは</a></li>
-                                        <li class="hb-menu_link"><a href="../Study/project.html">プロジェクト</a></li>
-                                    </ul>
-                            </details>
-                        </li>
-
-                        <li class="hb-menu_item">
-                            <details>
-                                <summary class="hb-menu_summary">Publication</summary>
-                                    <ul class="hb-menu_details">
-                                        <li class="hb-menu_link"><a href="../Journal/journal.html">オンラインジャーナル</a></li>
-                                        <li class="hb-menu_link"><a href="../Journal/paper.html">論文等</a></li>
-                                    </ul>
-                            </details>
-                        </li>
-
-                        <li class="hb-menu_item">
-                            <details>
-                                <summary class="hb-menu_summary">Events</summary>
-                                    <ul class="hb-menu_details">
-                                        <li class="hb-menu_link"><a href="../Events/event-top.html">開催予定のイベント</a></li>
-                                    </ul>
-                            </details>
-                        </li>
-
-                        <li class="hb-menu_item">
-                            <details>
-                                <summary class="hb-menu_summary">Archives</summary>
-                                    <ul class="hb-menu_details">
-                                        <li class="hb-menu_link"><a href="../Archive/symposium.html">シンポジウム</a></li>
-                                        <li class="hb-menu_link"><a href="../Archive/lecture.html">講演会</a></li>
-                                        <li class="hb-menu_link"><a href="../Archive/workshop.html">学習会</a></li>
-                                        <li class="hb-menu_link"><a href="../Archive/article.html">記事・講義録</a></li>
-                                        <li class="hb-menu_link"><a href="../Archive/previousproject.html">プロジェクト</a></li>
-                                    </ul>
-                            </details>
-                        </li>
-
-                        <li class="hb-menu_item">
-                            <details>
-                                <summary class="hb-menu_summary">Join us! FAQ</summary>
-                                    <ul class="hb-menu_details">
-                                        <li class="hb-menu_link"><a href="../Joinus/joinus.html">加入方法</a></li>
-                                        <li class="hb-menu_link"><a href="../Joinus/faq.html">FAQ</a></li>
-                                        <li class="hb-menu_link"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdlYnPmz2PLG7RJ-xQAqFJ7KKT9BsNmiGKWjkBV-ECuPpphXw/viewform" target="_blanck">お問い合わせ</a></li>
-                                    </ul>
-                            </details>
-                        </li>
-                    </ul>
+                <div class="global-nav">
+                    <div class="menu1">
+                        <a href="../Joinus/joinus.html" class="puzzle-icon-area">
+                            <img src="../img/header/icons8-パズルピース-50.png" alt="Join us" class="join-logo">
+                            <p class="icon-text join">Join!</p>
+                        </a>
+                    </div>    
+                    <div class="menu2">
+                        <a href="https://translate.google.com/?hl=ja&sl=ja&tl=en&op=websites" class="globe-icon-area">
+                            <img src="../img/header/icons8-globe-50.png" alt="Language" class="lang">
+                            <p class="icon-text add">AI Translation</p>
+                        </a>
+                    </div> 
+                    <!--ハンバーガーメニュー-->
+                    <div class="hb-menu">
+                        <!--三本線の表示-->
+                        <input type="checkbox" id="hb-menu_check">
+                        <label for="hb-menu_check" class="hb-menu_box">
+                            <span></span>
+                        </label>
+    
+                        <!--メニューの内容-->
+                        <div class="hb-menu_content">
+                            <ul class="hb-menu_list">
+    
+                                <li class="hb-menu_item">
+                                    <details class="js-details">
+                                        <summary class="hb-menu_summary js-summary">Home</summary>
+                                            <ul class="hb-menu_details js-answer">
+                                                <li class="hb-menu_link">
+                                                    <a href="../home.html">Home</a>
+                                                </li>
+                                            </ul>
+                                    </details>
+                                </li>
+    
+                                <li class="hb-menu_item">
+                                    <details class="js-details">
+                                        <summary class="hb-menu_summary js-summary">About us</summary>
+                                            <ul class="hb-menu_details js-answer">
+                                                <li class="hb-menu_link"><a href="./about.html">About JEARN</a></li>
+                                                <li class="hb-menu_link"><a href="./rijicho.html">理事長あいさつ</a></li>
+                                                <li class="hb-menu_link"><a href="./iEARN.html">iEARN</a></li>
+                                            </ul>
+                                    </details>
+                                </li>
+    
+                                <li class="hb-menu_item">
+                                    <details class="js-details">
+                                        <summary class="hb-menu_summary js-summary">国際協働学習</summary>
+                                            <ul class="hb-menu_details js-answer">
+                                                <li class="hb-menu_link"><a href="../Study/study.html">国際協働学習とは</a></li>
+                                                <li class="hb-menu_link"><a href="../Study/project.html">プロジェクト</a></li>
+                                            </ul>
+                                    </details>
+                                </li>
+    
+                                <li class="hb-menu_item">
+                                    <details class="js-details">
+                                        <summary class="hb-menu_summary js-summary">Publication</summary>
+                                            <ul class="hb-menu_details js-answer">
+                                                <li class="hb-menu_link"><a href="../Journal/journal.html">オンラインジャーナル</a></li>
+                                                <li class="hb-menu_link"><a href="../Journal/paper.html">論文等</a></li>
+                                            </ul>
+                                    </details>
+                                </li>
+    
+                                <li class="hb-menu_item">
+                                    <details class="js-details">
+                                        <summary class="hb-menu_summary js-summary">Events</summary>
+                                            <ul class="hb-menu_details js-answer">
+                                                <li class="hb-menu_link"><a href="../Events/event-top.html">開催予定のイベント</a></li>
+                                            </ul>
+                                    </details>
+                                </li>
+    
+                                <li class="hb-menu_item">
+                                    <details class="js-details">
+                                        <summary class="hb-menu_summary js-summary">Archives</summary>
+                                            <ul class="hb-menu_details js-answer">
+                                                <li class="hb-menu_link"><a href="../Archive/symposium.html">シンポジウム</a></li>
+                                                <li class="hb-menu_link"><a href="../Archive/lecture.html">講演会</a></li>
+                                                <li class="hb-menu_link"><a href="../Archive/workshop.html">学習会</a></li>
+                                                <li class="hb-menu_link"><a href="../Archive/article.html">記事・講義録</a></li>
+                                                <li class="hb-menu_link"><a href="../Archive/previousproject.html">プロジェクト</a></li>
+                                            </ul>
+                                    </details>
+                                </li>
+    
+                                <li class="hb-menu_item">
+                                    <details class="js-details">
+                                        <summary class="hb-menu_summary js-summary">Join us! FAQ</summary>
+                                            <ul class="hb-menu_details js-answer">
+                                                <li class="hb-menu_link"><a href="../Joinus/joinus.html">加入方法</a></li>
+                                                <li class="hb-menu_link"><a href="../Joinus/faq.html">FAQ</a></li>
+                                                <li class="hb-menu_link"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdlYnPmz2PLG7RJ-xQAqFJ7KKT9BsNmiGKWjkBV-ECuPpphXw/viewform" target="_blanck">お問い合わせ</a></li>
+                                            </ul>
+                                    </details>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -334,5 +342,6 @@
         crossorigin="anonymous">
     </script>
     <script src="./archives.js"></script>
+    <script src="../js/humberger.js"></script>
 </body>
 </html>
