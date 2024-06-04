@@ -102,8 +102,7 @@ h3 {
 p {
     font-size: 16px;
     font-weight: 400;
-    text-align:justify
-    line-height: 150%
+    text-align:justify;
 }
 
 /* --------------------------------------------- */
@@ -160,11 +159,13 @@ p {
     height: 100%;
 }
 
+
+
 .jearn-logo {
     width: 100%;
 }
 
-.menu1, .menu2 { 
+.menu1, .menu2, .news { 
     /* border-right: 2px solid black;    */
     width: 33%;
     min-width: 100px;
@@ -467,7 +468,7 @@ p {
         justify-content: flex-end;
     }
 
-    .menu1, .menu2, .hb-menu {
+    .menu1, .menu2, .hb-menu, .news {
         width: 60px;
         min-width: 0px;
     }
