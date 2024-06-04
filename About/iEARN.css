@@ -32,6 +32,7 @@ h2{
     font-family: "Bad Script", cursive;
     font-weight: 400;
     font-style: normal;
+    margin-left: 15%;
 }
 
 .iEARN-icon p{
@@ -66,7 +67,6 @@ h2{
 }
 .collaboration-text {
     padding: 5%;
-    transform: translate(0%, -10%);
 }
 
 /* Joinのcss */
@@ -84,6 +84,15 @@ h2{
     transform: translate(0%, 10%); */
     margin-right: 15%;
     margin-top: 8%;
+}
+
+.collaboration-left{
+    margin-right: 5%;
+    width: 30%;
+}
+
+.projectbook{
+    width: 10%;
 }
 
 .page-end {

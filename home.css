@@ -121,6 +121,12 @@ h1 {
 h3 {
     padding: 0 20px 0 20px;
 }
+
+.keywords-text{
+    font-weight: 400;
+    text-align: center;
+
+}
 /* ページTopへ戻るボタンのcss */
 .page-end  {
     text-align: center;
