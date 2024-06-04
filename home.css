@@ -2,6 +2,14 @@ h3{
     margin-top: 3%;
     margin-bottom: 5%;
 }
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    text-align:justify;
+    line-height: 2.5;
+}
+
 /* ロゴの設定 */
 .logo a {
     text-align: left;

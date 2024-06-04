@@ -72,6 +72,12 @@ h2{
 table{
     margin-left: 50px;
 }
+.table-text{
+    margin-top: 20px;
+    padding-left: 120px;
+    font-size: 12px;
+
+}
 .kind-table{
     border: 1px black solid;
     margin: auto;
