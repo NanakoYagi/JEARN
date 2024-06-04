@@ -6,7 +6,7 @@
 html{
     font-family: "Andika", sans-serif;
     font-weight: 400;
-    font-style: normal;
+    font-style: normal;;
 }
 
 body{
@@ -100,9 +100,10 @@ h3 {
     font-weight: 400;
 }
 p {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
-    text-align:justify
+    text-align:justify;
+    line-height: 2;
 }
 
 /* --------------------------------------------- */
@@ -159,11 +160,13 @@ p {
     height: 100%;
 }
 
+
+
 .jearn-logo {
     width: 100%;
 }
 
-.menu1, .menu2 { 
+.menu1, .menu2, .news { 
     /* border-right: 2px solid black;    */
     width: 33%;
     min-width: 100px;
@@ -444,6 +447,16 @@ p {
     text-align: center;
 }
 
+/*ボタン　中央設置*/
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.address a{
+    font-size: 16px;
+}
+
 @media screen and (max-width: 900px) {
     p{
         font-size: 16px;
@@ -460,7 +473,7 @@ p {
         justify-content: flex-end;
     }
 
-    .menu1, .menu2, .hb-menu {
+    .menu1, .menu2, .hb-menu, .news {
         width: 60px;
         min-width: 0px;
     }
