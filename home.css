@@ -50,6 +50,25 @@ p {
         text-decoration: none;
 }
 
+/* キーフレームの定義 */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* アニメーションの適用 */
+.animate-text {
+    opacity: 0; /* 初期状態で非表示 */
+    animation: fadeInUp 2s ease-out forwards; /* アニメーションの適用 */
+}
+
+
 .content-title{
     font-family: "Bad Script", cursive;
     font-weight: 400;
