@@ -13,6 +13,23 @@ h2{
   line-height: 2em;
 }
 
+.collaboration-center{
+  margin: auto;
+  display: flex;
+}
+
+.collaboration-center1{
+  margin: auto;
+  width: 40%;
+  height: 40%;
+}
+
+.collaboration-center2{
+  margin: auto;
+  width: 40%;
+  height: 40%;
+}
+
 .gakusyu-icon{
   text-align: center;
 }
@@ -62,4 +79,9 @@ h2{
 
 .card-text{
   text-align: justify;
+}
+
+.collaboration-center{
+  margin: auto;
+  text-align: center;
 }
