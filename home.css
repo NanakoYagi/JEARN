@@ -133,6 +133,17 @@ p {
     margin-top: 20px;
 }
 
+.partners-network{
+    width: 80%;
+    margin: auto;
+}
+
+.network{
+    width: 80%;
+    margin: auto;
+    padding: 20px 0 20px 0;
+}
+
 /* GDSCのロゴ*/
 .GDSC-logo {
     margin: auto;
