@@ -14,6 +14,7 @@ body{
     margin-right: 100px;
 }
 
+
 .join{
     font-family: "Andika", sans-serif;
     font-weight: 400;
@@ -457,15 +458,39 @@ p {
     font-size: 16px;
 }
 
+.page-end{
+    text-align: center;
+}
+
 @media screen and (max-width: 900px) {
     p{
-        font-size: 16px;
+        font-size: 12px;
         margin-left: 10%;
         margin-right: 10%;
     }
     .header {
         padding-left: 10px;
         height: auto;
+    }
+
+    h1{
+        font-size: 24px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    h3{
+        font-size: 12px;
+    }
+
+    a{
+        font-size: 12px;
+    }
+
+    .card-title{
+        font-size: 16px;
     }
 
     .global-nav {

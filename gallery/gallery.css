@@ -1,0 +1,28 @@
+.keyvisual{
+    background-color: #3BAC68;
+  }
+
+  .fb_iframe_widget,
+  .fb_iframe_widget span,
+  .fb_iframe_widget iframe[style]{
+      width: 100% !important;
+  }
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 28px;
+    grid-row-gap: 16px;
+    }
+
+.img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.page-end{
+    text-align: center;
+}
