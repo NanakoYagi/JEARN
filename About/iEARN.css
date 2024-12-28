@@ -1,173 +1,202 @@
+/* Base styles */
+.content-bg-white {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 .iEARN-Logo {
-    /* iEARNのロゴのcss */
     text-align: center;
-    margin-top: 3%;
-    margin-bottom: 2%;
+    margin: 30px auto;
+    width: 100%;
+    max-width: 600px;
+}
+
+.iEARN-Logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.cliche {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: clamp(32px, 5vw, 64px);
+    margin: 30px 0;
 }
 
 .iEARN-info {
-    /* iEARNの説明文のcss */
-    /* padding: 10%; */
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 23%;
+    text-align: center;
     line-height: 2em;
+    margin: 30px auto;
+    padding: 0 20px;
+    max-width: 800px;
 }
 
-.iEARN-icon {
-    /* Collaborationのアイコンのcss */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.cliche{
-        font-family: "Amatic SC", sans-serif;
-        font-weight: 500;
-        font-style: normal;
-        font-size: 64px;
-}
-
-h2{
-    font-family: "Bad Script", cursive;
+h2 {
+    font-family: "Andica", cursive;
     font-weight: 400;
     font-style: normal;
-    margin-left: 15%;
+    text-align: left;
+    margin: 40px 0 20px 5%;
 }
 
-.iEARN-icon p{
-    font-family: "Bad Script", cursive;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.collaboration-center{
-    margin: auto;
+/* Collaboration Center */
+.collaboration-center {
+    margin: 30px auto;
     text-align: center;
 }
 
-/* 以下それぞれのアイコンについてのcss */
-.country-icon {
-    padding: 5%;
-}
-.language-icon {
-    padding: 5%;
-}
-.education-icon {
-    padding: 5%;
-}
-.youth-icon {
-    padding: 5%;
+.collaboration-center img {
+    max-width: 100%;
+    height: auto;
 }
 
-/* Collaborationのcss */
+/* Icon Grid */
+.iEARN-icon {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.iEARN-icon > div {
+    text-align: center;
+    padding: 20px;
+}
+
+.iEARN-icon img {
+    max-width: 80px;
+    height: auto;
+}
+
+.iEARN-icon p {
+    font-family: "Andica", cursive;
+    margin-top: 10px;
+}
+
+/* Collaboration Info */
 .collaboration-info {
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
     justify-content: center;
-    line-height: 2;
-}
-.collaboration-info a {
-    text-decoration: none;
-}
-.collaboration-text {
-    padding: 5%;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-/* Joinのcss */
+.collaboration-info img {
+    max-width: 100%;
+    height: auto;
+}
+
+.collaboration-left {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.collaboration-text {
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+/* Join Section */
 .join-info {
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
     justify-content: center;
+    align-items: center;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.join-text {
+    flex: 1;
+    min-width: 300px;
     line-height: 2;
 }
-.join-info a {
-    text-decoration: none;
-}
-.join-text {
-    /* padding: 10%;
-    transform: translate(0%, 10%); */
-    margin-right: 15%;
-    margin-top: 8%;
-}
 
-.collaboration-left{
-    margin-right: 5%;
-    width: 30%;
-}
-
-.projectbook{
-    width: 10%;
+.projectbook {
+    width: auto;
+    max-width: 200px;
+    height: auto;
 }
 
 .page-end {
     text-align: center;
+    margin: 40px 0;
 }
 
+/* Button Styles */
+.button-container {
+    text-align: left;
+    margin-top: 20px;
+}
 
-/* レスポンシブデザイン */
-@media (max-width: 767px){
-    .keyvisual {
-        width: 193%;
-        padding: 1%;
+.btn-primary {
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.btn-primary a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .content-bg-white {
+        padding: 15px;
     }
-     .title {
-        width: 100%;
-        padding: 1%;
-    }
-    .page-title {
-        width: 193%;
-        padding: 1%;
-    }
-    .cliché {
-        width: 193%;
-        padding: 1%;
-    }
-    .iEARN-Logo {
-        width: 193%;
-        padding: 1%;
-    }
+    
     .iEARN-info {
-        padding: 5%;
-        line-height: 1.5;
-        width: 185%;
+        padding: 0 15px;
+        font-size: 14px;
     }
-    .iEARN-icon {
-        padding: 1%;
-        width: 193%;
+    
+    h2 {
+        margin-left: 15px;
+        font-size: 24px;
     }
-    .collaboration-info {
-        line-height: 1.5;
-        width: 193%;
-        padding: 1%;
+    
+    .collaboration-left {
+        width: 100%;
+        margin-right: 0;
     }
-    .collaboration-text {
-        padding: 1%;
-        transform: translate(0%, 0%);
-        width: 193%;
-    }
-    .join-info {
-        line-height: 1.5;
-        width: 193%;
-        padding: 1%;
-    }
+    
     .join-text {
-        padding: 1%;
-        transform: translate(0%, 0%);
-        width: 193%;
+        text-align: center;
+        margin-right: 0;
+        margin-top: 20px;
     }
-    /* .page-end {
-        width: 193%;
-        padding: 1%;
-    } */
-    .end{
-        width: 193%;
-        background-color: #3b4fac;
-        padding: 1%;
+    
+    .button-container {
+        text-align: center;
     }
-    .copy {
-        width: 193%;
-        background-color: #3b4fac;
-        padding: 1%;
+}
+
+@media (max-width: 480px) {
+    .iEARN-icon {
+        grid-template-columns: 1fr;
+    }
+    
+    .collaboration-info, .join-info {
+        flex-direction: column;
+    }
+    
+    .projectbook {
+        max-width: 150px;
+    }
+    
+    .cliche {
+        font-size: 28px;
     }
 }

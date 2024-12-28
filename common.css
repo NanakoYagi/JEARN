@@ -489,6 +489,22 @@ p {
         font-size: 12px;
     }
 
+    .jearn-logo {
+        width: 100%;
+    }
+
+    .news-logo{
+        width: 80%;
+    }
+
+    .join-logo{
+        width: 80%;
+    }
+
+    .language-logo{
+        width: 50%;
+    }
+
     .card-title{
         font-size: 16px;
     }

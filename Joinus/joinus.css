@@ -1,165 +1,202 @@
-/* 基本スタイル */
-.card1{
-    border: none;
+/* Base styles */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
 }
 
-/* 通常のカードスタイル */
+/* Card styles */
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 1.5rem;
+}
+
+.col {
+    aspect-ratio: 1/1;
+    padding: 15px;
+    display: flex;
+}
+
 .card1 {
-    transition: 0.3s; /* ホバー時のアニメーション */
-  }
-  
-  /* ホバー時のスタイル */
-  .card1:hover {
-    background-color: #f0f0f0; /* 背景色の変化 */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* 影を追加 */
-    transform: translateY(-5px); /* カードが少し浮く */
-  }
-  
-  /* カードの画像のスタイル */
-  .card1 .card-img-top {
-    transition: 0.3s; /* 画像のアニメーション */
-  }
-  
-  /* ホバー時の画像スタイル */
-  .card1:hover .card-img-top {
-    transform: scale(1.05); /* 画像が少し拡大する */
-  }
-
-  
-.keyvisual{
-    background-color:#3BACAC ;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin: 0; /* マージンを0に設定 */
 }
 
-.arrow-icon {
-    display: flex; /* フレキシブルボックスモデルを使用 */
-    justify-content: center; /* 水平中央寄せ */
-    align-items: flex-start; /* 上部寄せ */
-    width: 50px; /* アイコンの幅 */
-    height: 50px; /* アイコンの高さ */
+.card1:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
 }
 
-.arrow-icon img {
-    margin-top: 15px; /* 画像の上部に余白を追加 */
-}
-
-
-
-
-/* .iearn-logo{
-    max-width: 100%;
+.card1 .card-img-top {
+    transition: 0.3s;
+    max-width: 50%;
     height: auto;
-} */
-
-.iearn-text{
-    transform: translate(0, 55px);
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
+    object-fit: contain;
 }
 
+.card1:hover .card-img-top {
+    transform: scale(1.05);
+}
 
-p{
-    /* font-size: 16px;
-    font-weight: 500;
-    margin-bottom: 0; */
+.card-body {
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* キーヴィジュアル */
+.keyvisual {
+    background-color: #3BACAC;
+    padding: 20px;
+    margin-bottom: 30px;
+    width: 100vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+/* テキストスタイル */
+p {
     margin-top: 30px;
-    margin-left: 15%;
     line-height: 2em;
+    margin-left: 0;
 }
 
-h2{
+h2 {
     margin-top: 50px;
 }
 
-/*表のスタイル*/
-table{
-    margin-left: 50px;
+/* テーブルスタイル */
+.kind-table {
+    border: 1px black solid;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 1000px;
 }
-.table-text{
+
+th, td {
+    border: 1px black solid;
+    padding: 10px;
+}
+
+.table-text {
     margin-top: 20px;
-    padding-left: 120px;
+    padding-left: 20px;
     font-size: 12px;
-
-}
-.kind-table{
-    border: 1px black solid;
-    margin: auto;
 }
 
-th, td{
-    border: 1px black solid;
+/* カラム背景 */
+.column1 { background-color: #3BACAC; }
+.column3, .column5, .column7, .column9 { background-color: #d9d9d9; }
+
+/* アコーディオンスタイル */
+.accordion-button {
+    font-weight: bold;
 }
 
-.column1{
-    background-color: #3BACAC;
+.account-create {
+    font-weight: bold;
 }
 
-.column3{
-    background-color: #d9d9d9;
+.kome {
+    font-size: 85%;
 }
 
-.column5{
-    background-color: #d9d9d9;
+.page-end {
+    text-align: center;
+    margin: 30px 0;
 }
 
-.column7{
-    background-color: #d9d9d9;
+/* レスポンシブスタイル */
+@media screen and (max-width: 1024px) {
+    main {
+        padding: 0 30px;
+    }
 }
 
-.column9{
-    background-color: #d9d9d9;
+@media screen and (max-width: 768px) {
+    main {
+        padding: 0 20px;
+    }
+
+    .row-cols-md-4 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .card1 .card-img-top {
+        max-width: 70%;
+    }
+
+    .col {
+        padding: 10px;
+    }
 }
 
-.table-text{
-    margin-left: 30px;
+@media screen and (max-width: 480px) {
+    main {
+        padding: 0 15px;
+    }
+
+    .row-cols-md-4 {
+        grid-template-columns: 1fr;
+    }
+
+    .card1 .card-img-top {
+        max-width: 60%;
+    }
+
+    .col {
+        padding: 8px;
+    }
+
+    .card1 {
+        padding: 10px;
+    }
+
+    .card-body h5{
+        font-size: 1px;
+    }
 }
 
-.register-table{
+/* ユーティリティクラス */
+.arrow-icon {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50px;
+    height: 50px;
+}
+
+.arrow-icon img {
+    margin-top: 15px;
+}
+
+.register-table {
     display: flex;
     margin: auto;
     width: 80%;
     height: 100%;
 }
 
-
-.table-left{
+.table-left {
     float: left;
 }
-
-
-.accordion-button{
-    font-weight: bold;
-}
-
-.account-create{
-    font-weight: bold;
-}
-
-
-/* カードの基本スタイル */
-.card1 {
-    border: 1px solid #ddd; /* 境界線 */
-    border-radius: 10px; /* 角の丸み */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* 軽いシャドウ */
-    transition: all 0.3s ease; /* トランジションの滑らかさ */
-}
-
-/* 画像部分の調整 */
-.card-img-top {
-    max-width: 50%; /* 幅を縮小 */
-    height: auto; /* 高さは自動調整 */
-    margin: 0 auto; /* 中央寄せ */
-    display: block; /* ブロック要素として扱う */
-    padding: 10px; /* 余白を追加 */
-    object-fit: contain; /* 縦横比を維持しつつ縮小 */
-}
-
-/* カード内のテキスト部分 */
-.card-body {
-    text-align: center; /* テキストを中央寄せ */
-}
-
-.kome{
-    font-size: 85%;
-}
-
-.page-end{
-    text-align: center;
-  }
