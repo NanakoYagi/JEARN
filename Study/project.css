@@ -1,104 +1,140 @@
-.keyvisual{
-  background-color:#DC9452 ;
+/* ベーススタイル */
+.keyvisual {
+  background-color: #DC9452;
+  padding: 2rem 1rem;
 }
 
-h2{
+h2 {
   margin-top: 30px;
   margin-bottom: 50px;
+  text-align: center;
 }
 
-.slogan{
+.slogan {
   font-family: "Amatic SC", sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 64px;
+  font-size: clamp(36px, 5vw, 64px);
+  text-align: center;
+  /* 以下を追加 */
+  width: 100%;
+  margin: 0 auto;
+  display: block;
 }
 
-
-.text1{
+.text1 {
   margin-top: 30px;
   text-align: center;
+  padding: 0 1rem;
+}
+
+/* カードスタイル */
+.card-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 30px;
+  padding: 0 1rem;
+}
+
+.gakusyu-icon,
+.project-icon {
+  text-align: center;
+  padding: 1rem;
+}
+
+.gakusyu-icon img,
+.project-icon img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-title {
+  text-align: center;
+  font-size: clamp(18px, 2.5vw, 24px);
+}
+
+.card-text {
+  font-size: 16px;
+  width: 90%; /* モバイルでより広い幅に */
+  margin: auto;
+  text-align: justify;
+}
+
+/* 動画のレスポンシブ対応 */
+.girl-rising-movie {
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+/* その他のテキストスタイル */
+.text-other {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+/* リンクスタイル */
+.text-other a {
+  color: #0A2397;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.3s ease;
+  display: inline-block; /* タップターゲットを改善 */
+  padding: 0.5rem 1rem;
+}
+
+.text-other a::after {
+  content: '✔';
+  position: absolute;
+  opacity: 0;
+  right: -15px;
+  transition: all 0.3s ease;
+}
+
+.text-other a:hover::after {
+  opacity: 1;
+  transform: translateX(5px);
+  color: green;
+}
+
+/* レスポンシブ調整 */
+@media (max-width: 768px) {
+  .card-text {
+    width: 95%;
+    font-size: 14px;
   }
-  
-  .gakusyu-icon{
-    text-align: center;
+
+  .card-group {
+    gap: 1rem;
   }
-  
-  .project-icon{
-    text-align: center;
-  }
-  
-  .card-title{
-    text-align: center;
-  }
-  
-  .card-text{
-    font-size: 100%;
-    width: 60%;
-    margin: auto;
-  }
-  
-  .card-more{
-    text-align: right;
-  }
-  
-  .card-title{
-    text-align: center;
-  }
-  
-  .heading2-text{
-    text-align: center;
-    margin-top: 0px;
-    margin-bottom: 40px;
-  }
-  .page-end{
-    text-align: center;
-  }
-  
-  .card-group{
+
+  h2 {
+    margin-top: 20px;
     margin-bottom: 30px;
   }
-  
-  .kome{
-    font-size: 85%;
-  }
-  
-  .text-body-secondary{
-    text-align: right;
-  }
-  
-  .card-text{
-    text-align: justify;
+}
+
+@media (max-width: 480px) {
+  .card-text {
+    width: 100%;
   }
 
-.text-other{
-  text-align: center;
+  .gakusyu-icon,
+  .project-icon {
+    padding: 0.5rem;
+  }
+
+  .text-other a {
+    padding: 0.25rem 0.5rem;
+  }
 }
 
-.girl-rising-movie{
-  margin: auto;
-}
-
-/* リンクの基本スタイル */
-.text-other a {
-  color: #0A2397; /* 青系のカラー */
-  text-decoration: none; /* テキスト装飾なし */
-  position: relative; /* 擬似要素を使うために必要 */
-  transition: all 0.3s ease; /* 滑らかなトランジション */
-}
-
-/* 擬似要素を使ってチェックマークを追加 */
-.text-other a::after {
-  content: '✔'; /* チェックマーク */
-  position: absolute; /* 絶対配置 */
-  opacity: 0; /* 初期状態では非表示 */
-  right: -15px; /* 右側に配置 */
-  transition: all 0.3s ease; /* トランジションで滑らかに表示 */
-}
-
-/* ホバー時にチェックマークを表示 */
-.text-other a:hover::after {
-  opacity: 1; /* ホバー時にチェックマークを表示 */
-  transform: translateX(5px); /* 若干右へ移動 */
-  color: green; /* チェックマークの色 */
+/* アクセシビリティの改善 */
+@media (prefers-reduced-motion: reduce) {
+  .text-other a,
+  .text-other a::after {
+    transition: none;
+  }
 }

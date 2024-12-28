@@ -27,6 +27,7 @@
 
 .beginning-text, .button-group {
     width: 100%;
+    font-size: 16px;
     text-align: center;
 }
 
@@ -105,14 +106,15 @@
     }
     
     .button-group {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row; /* 横並びを維持 */
+        justify-content: center;
+        gap: 8px; /* スマホでは間隔を少し狭める */
     }
     
     .item-button {
-        width: 100%;
-        max-width: 200px;
-        margin: 5px 0;
+        padding: 5px 10px; /* パディングを少し狭める */
+        min-width: auto; /* 最小幅の制限を解除 */
+        font-size: 16px; /* フォントサイズを固定 */
     }
 }
 

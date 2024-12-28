@@ -85,3 +85,14 @@ h2{
   margin: auto;
   text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+  .icon {
+      width: 15%;
+      height: 15%;
+  }
+
+  .card-text{
+    font-size: 12px;
+  }
+}
