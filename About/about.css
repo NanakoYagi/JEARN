@@ -149,6 +149,13 @@ p {
   padding: 1.5rem;
 }
 
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 /* Icon containers */
 .gakusyu-icon,
 .project-icon,
