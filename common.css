@@ -34,6 +34,7 @@ body{
 }
 
 .keyvisual h1{
+    margin-top: 10%;
     font-family: "Andika", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -420,7 +421,25 @@ p {
     color: #ffffff;
     text-decoration: none;
     padding: 7px 0 7px 20px;
-    width: 250px;     /* 幅を指定することでメニューの詳細の開始位置を揃える */
+    width: 500px;     /* 幅を指定することでメニューの詳細の開始位置を揃える */
+}
+
+summary a {
+    display: block;
+    font-size: 32px;
+    box-sizing: border-box;
+    color: #ffffff;
+    text-decoration: none;
+    padding: px 0 7px 20px;
+    width: 240px;     /* 幅を指定することでメニューの詳細の開始位置を揃える */
+}
+
+summary a:hover {
+    color: #ffffff;
+}
+
+summary a:visited{
+    color: #ffffff;
 }
 /* 各メニュー項目の詳細 （「About us」内の要素の「About JEARN」とか「理事業挨拶」）の設定*/
 .hb-menu_details {
@@ -563,6 +582,10 @@ p {
 
     .hb-menu_summary {
         font-size: 20px; /* スマートフォンサイズでの表示 */
+    }
+
+    summary a{
+        font-size: 20px;
     }
 
 }
