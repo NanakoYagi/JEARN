@@ -424,6 +424,19 @@ p {
     width: 500px;     /* 幅を指定することでメニューの詳細の開始位置を揃える */
 }
 
+/* ホームメニュー項目のベーススタイル */
+.hb-menu_item a.hb-menu_summary {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+/* ホームメニュー項目のホバー時のスタイル */
+.hb-menu_item a.hb-menu_summary:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
 summary a {
     display: block;
     font-size: 32px;
