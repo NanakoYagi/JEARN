@@ -1,4 +1,5 @@
-/* 見出しのcss */
+/* 見出しのcss*/
+/*
 .greeting {
     display: flex;
     flex-wrap: wrap;
@@ -10,11 +11,34 @@
     padding: 5%;
     transform: translate(-20%, -5%);
 
+}*/
+
+/* 基本スタイル */
+.greeting {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
+.greeting-text {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.rijicho-picture {
+    object-fit: contain;
+    width: 15%;  /* 15%から25%に増加 */
+    height: auto;
+}
 .rijicho-picture{ /*写真に影をつける*/
     box-shadow: 15px 15px 0px 0 rgb(161, 157, 157);
-}
+} 
 
 /*本文のcss*/
 .detail{
@@ -30,4 +54,42 @@
 .reiwa{
     text-align: left;
     margin-top: 5%;
+}
+
+/* タブレット向けスタイル */
+@media screen and (max-width: 768px) {
+    .greeting {
+        flex-direction: column;
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .greeting-text {
+        font-size: 1.3rem;
+    }
+
+    .rijicho-picture {
+        width: 10%;
+    }
+}
+
+/* スマートフォン向けスタイル */
+@media screen and (max-width: 480px) {
+    .greeting {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .greeting-text {
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+
+    .rijicho-picture {
+        width: 30%;
+    }
+
+    .greeting-text p {
+        margin-bottom: 0.5rem;
+    }
 }
