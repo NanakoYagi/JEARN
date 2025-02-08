@@ -1,6 +1,6 @@
 /* Base styles */
 main {
-    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     padding: 0 40px;
 }
@@ -11,26 +11,6 @@ main {
     --bs-gutter-y: 1.5rem;
 }
 
-.col {
-    aspect-ratio: 1/1;
-    padding: 15px;
-    display: flex;
-}
-
-.card1 {
-    width: 100%;
-    height: 100%;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: 0.3s;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-    margin: 0; /* マージンを0に設定 */
-}
 
 .card1:hover {
     background-color: #f0f0f0;
@@ -42,9 +22,7 @@ main {
     transition: 0.3s;
     max-width: 50%;
     height: auto;
-    margin: 0 auto;
     display: block;
-    padding: 10px;
     object-fit: contain;
 }
 
@@ -52,15 +30,6 @@ main {
     transform: scale(1.05);
 }
 
-.card-body {
-    text-align: center;
-    padding: 15px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
 /* キーヴィジュアル */
 .keyvisual {
@@ -86,20 +55,23 @@ h2 {
 /* テーブルスタイル */
 .kind-table {
     border: 1px black solid;
-    margin: 20px auto;
+    margin: 20px 0;  /* 左右のマージンを0に変更 */
     width: 100%;
-    max-width: 1000px;
+    box-sizing: border-box;
 }
 
-th, td {
+.kind-table th,
+.kind-table td {
     border: 1px black solid;
     padding: 10px;
+    box-sizing: border-box;
 }
 
 .table-text {
     margin-top: 20px;
-    padding-left: 20px;
+    padding-left: 0;  /* 左パディングを削除 */
     font-size: 12px;
+    width: 100%;
 }
 
 /* カラム背景 */
@@ -149,6 +121,10 @@ th, td {
     .col {
         padding: 10px;
     }
+
+    .kind-table{
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -173,7 +149,7 @@ th, td {
     }
 
     .card-body h5{
-        font-size: 1px;
+        font-size: 12px;
     }
 }
 
@@ -199,4 +175,83 @@ th, td {
 
 .table-left {
     float: left;
+}
+
+/* Container styling */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -15px; /* Negative margin to counteract padding */
+    width: calc(100% + 30px); /* Adjust width to account for negative margins */
+}
+
+/* Column styling */
+.col {
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    flex: 0 0 auto; /* Prevent columns from growing */
+}
+
+/* Responsive column widths */
+@media (max-width: 768px) {
+    .col {
+        width: 50%; /* 2 columns on medium screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .col {
+        width: 100%; /* 1 column on small screens */
+    }
+}
+
+/* Card styling */
+.card1 {
+    width: 100%;
+    max-width: 100％; /* Prevent cards from becoming too wide */
+    height: 80%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin: 0 auto; /* Center card within column */
+}
+
+.card1:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+/* Card image styling */
+.card1 .card-img-top {
+    transition: 0.3s;
+    max-width: 50%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
+    object-fit: contain;
+}
+
+.card1:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+/* Card body styling */
+.card-body {
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
