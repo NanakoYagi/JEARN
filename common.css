@@ -152,7 +152,11 @@ p {
 } 
 
 .logo {
-    width: fit-content;
+    width: 100%;
+    max-width: 300px; /* 必要に応じて最大幅を設定 */
+    height: auto;
+    image-rendering: -webkit-optimize-contrast; /* Webkitブラウザでの画像鮮明度向上 */
+    image-rendering: crisp-edges; /* エッジの鮮明さを保持 */
 }
 
 .global-nav {
@@ -523,7 +527,13 @@ summary a:visited{
         font-size: 12px;
     }
 
-    .jearn-logo {
+    .jearn-logo, .news-logo, .join-logo, .language-logo {
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    /* .jearn-logo {
         width: 100%;
     }
 
@@ -537,7 +547,7 @@ summary a:visited{
 
     .language-logo{
         width: 50%;
-    }
+    } */
 
     .card-title{
         font-size: 16px;
@@ -601,4 +611,10 @@ summary a:visited{
         font-size: 20px;
     }
 
+}
+
+@media screen and (max-width: 900px) {
+    .logo{
+        width: 100%;
+    }
 }
