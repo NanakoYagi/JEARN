@@ -25,15 +25,11 @@ p {
 
 /* Slogan section styling */
 .slogan {
-  text-align: center;
-  font-family: 'Caveat', cursive;
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #333;
-  margin: 2rem auto;
-  padding: 1rem 0;
-  max-width: 800px;
-  line-height: 1.4;
+  font-family: "Amatic SC", sans-serif;
+  color: #000000;
+  font-weight: 500;
+  font-style: bold;
+  font-size: 3.5rem;
 }
 
 /* レスポンシブ対応 */
