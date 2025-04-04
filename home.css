@@ -35,6 +35,13 @@ p {
     line-height: 200%;
     text-align: center;
   }
+.modal-img{
+    width: 80%;
+    max-width: 300px;
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+}
 
   .modal-text {
     color: #333333; /* モーダルウィンドウの文字の色 */
@@ -79,16 +86,9 @@ p {
 }
 
 
-.symposium-news::before {
-    left: 20px;
-}
-
-.symposium-news::after {
-    right: 20px;
-}
-
 .symposium-news p {
     margin: 0;
+    text-align: center;
 }
 
 /* 「詳細はこちら」部分を強調 */
